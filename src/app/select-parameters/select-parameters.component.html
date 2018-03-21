@@ -1,0 +1,25 @@
+<mat-form-field>
+  <mat-select placeholder="Select Level: ">
+    <mat-option *ngFor="let level of levels" [value]="level.id" >
+      {{ level.value }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-select placeholder="Select Notion: ">
+    <mat-option *ngFor="let notion of notions" [value]="notion.id" >
+      {{ notion.value }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-select placeholder="Select Sub Notion: ">
+    <mat-option *ngFor="let subnotion of subnotions" [value]="subnotion.id" >
+      {{ subnotion.value }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+      
+<button mat-button>Generate Sequence</button>

@@ -1,9 +1,12 @@
-<mat-tab-group>
-    <mat-tab label="Create a new Sequence">
-      <select-parameters></select-parameters>
-    </mat-tab>
-    <mat-tab label="Sequences List">
-      <sequences-list></sequences-list>
-    </mat-tab>
-  </mat-tab-group>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  
+  <span class="fill-remaining-space"></span>
+
+  <button mat-button routerLink="/sequence-creation">Sequence Creation</button>
+  <button mat-button routerLink="/sequences-list">Sequence List</button>
+</mat-toolbar>
+
+<!-- Rendering Modules according to Routes -->
+<router-outlet></router-outlet>
 

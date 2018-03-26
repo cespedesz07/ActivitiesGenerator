@@ -1,7 +1,7 @@
 <mat-form-field>
   <mat-select placeholder="Select Level: ">
-    <mat-option *ngFor="let level of levels" [value]="level.id" >
-      {{ level.value }}
+    <mat-option *ngFor="let level of levels | async" [value]="level.name" >
+      {{ level.name }}
     </mat-option>
   </mat-select>
 </mat-form-field>

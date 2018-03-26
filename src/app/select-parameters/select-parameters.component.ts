@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ParametersService } from '../services/parameters/parameters.service';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
 
 import { Parameter } from '../model/parameter';
 
@@ -12,7 +14,7 @@ export class SelectParametersComponent implements OnInit {
 
 
   // Attributes
-  levels: Parameter[];
+  levels: Observable< Parameter[] >;
   notions: Parameter[];
 
 
@@ -21,10 +23,8 @@ export class SelectParametersComponent implements OnInit {
   }
 
   getLevelsParams(): void {
-    this.parametersService.getLevelsParams()
-      .then( levels => {
-        this.levels = levels;
-      });
+    this.levels = this.parametersService.getLevelsParams();
+    console.log( this.levels );
   }
 
   getNotionsParams(): void {

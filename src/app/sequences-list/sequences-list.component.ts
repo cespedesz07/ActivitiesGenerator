@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SequenceService } from '../services/sequence/sequence.service'
+import { Observable } from 'rxjs/Observable';
 
-import { Sequence } from '../model/sequence'
+import { SecuenciaActividades } from '../model/SecuenciaActividades'
 
 @Component({
   selector: 'sequences-list',
@@ -12,15 +13,13 @@ export class SequencesListComponent implements OnInit {
 
 
   // Attributes
-  sequencesList: Sequence[];
-  displayedColumns: String[] = ["id", "date", "user", "level", "notion"]
+  activitiesSequence: Observable< SecuenciaActividades[] >;
+  displayedColumns: String[] = ["fecha_generacion", "usuario_realizador", "nivel_idioma"]
 
   // Methods
   constructor( private sequenceService: SequenceService ) { }
 
   getSequencesList(): void {
-    this.sequenceService.getSequencesList().
-      then( sequencesList => this.sequencesList = sequencesList )
   }
 
   ngOnInit() {

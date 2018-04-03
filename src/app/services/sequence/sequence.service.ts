@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
-
-import { Sequence } from '../../model/sequence';
-import { SEQUENCES_LIST } from './mock-sequence';
+import { Observable } from 'rxjs/Observable'
+import { SecuenciaActividades } from '../../model/SecuenciaActividades';
 
 @Injectable()
 export class SequenceService {
 
   constructor() { }
 
-  getSequencesList(): Promise< Array<Sequence> >{
-    return new Promise( (resolve, reject) => {
-      resolve( SEQUENCES_LIST );
-    })
+  getSequencesList(): Observable< SecuenciaActividades[] >{
+    return;  
   }
 
 }

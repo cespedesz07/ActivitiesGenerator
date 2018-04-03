@@ -3,7 +3,8 @@ import { ParametersService } from '../services/parameters/parameters.service';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 
-import { Parameter } from '../model/parameter';
+import { Nivel } from '../model/Nivel';
+import { Actividad } from '../model/Actividad';
 
 @Component({
   selector: 'select-parameters',
@@ -14,8 +15,8 @@ export class SelectParametersComponent implements OnInit {
 
 
   // Attributes
-  levels: Observable< Parameter[] >;
-  notions: Parameter[];
+  levels: Observable< Nivel[] >;
+  activities: Observable< Actividad[] >;
 
 
   // Methods
@@ -24,17 +25,19 @@ export class SelectParametersComponent implements OnInit {
 
   getLevelsParams(): void {
     this.levels = this.parametersService.getLevelsParams();
-    console.log( this.levels );
   }
 
-  getNotionsParams(): void {
-    this.parametersService.getNotionsParams()
-      .then( notions => this.notions = notions );
+  getActivities(): void {
+    this.activities = this.parametersService.getActivities();
   }
 
   ngOnInit() {
     this.getLevelsParams();
-    this.getNotionsParams();
+    this.getActivities();
+  }
+
+  selectActivity( activity ) {
+    console.log( activity );
   }
 
 }

@@ -1,34 +1,22 @@
 <div class="mat-elevation-z8">
-  <mat-table #table [dataSource]="sequencesList">
+  <mat-table #table [dataSource]="activitiesSequence">
 
-    <!-- ID -->
-    <ng-container matColumnDef="id">
-      <mat-header-cell *matHeaderCellDef> id </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    <!-- fecha_generacion -->
+    <ng-container matColumnDef="fecha_generacion">
+      <mat-header-cell *matHeaderCellDef> fecha_generacion </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fecha_generacion}} </mat-cell>
     </ng-container>
 
-    <!-- Date -->
-    <ng-container matColumnDef="date">
-      <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
+    <!-- usuario_realizador -->
+    <ng-container matColumnDef="usuario_realizador">
+      <mat-header-cell *matHeaderCellDef> usuario_realizador </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.usuario_realizador}} </mat-cell>
     </ng-container>
 
-    <!-- user -->
-    <ng-container matColumnDef="user">
-      <mat-header-cell *matHeaderCellDef> User </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.user}} </mat-cell>
-    </ng-container>
-
-    <!-- Level -->
-    <ng-container matColumnDef="level">
-      <mat-header-cell *matHeaderCellDef> Level </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.level}} </mat-cell>
-    </ng-container>
-
-    <!-- Notion -->
-    <ng-container matColumnDef="notion">
-      <mat-header-cell *matHeaderCellDef> Notion </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.notion}} </mat-cell>
+    <!-- nivel_idioma -->
+    <ng-container matColumnDef="nivel_idioma">
+      <mat-header-cell *matHeaderCellDef> nivel_idioma </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.nivel_idioma}} </mat-cell>
     </ng-container>
 
     <!-- Actions -->

@@ -1,25 +1,23 @@
-<mat-form-field>
-  <mat-select placeholder="Select Level: ">
-    <mat-option *ngFor="let level of levels | async" [value]="level.name" >
-      {{ level.name }}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+<div class="flex-container">
+  <mat-form-field color="primary">
+    <mat-select placeholder="Select Level: ">
+      <mat-option *ngFor="let level of levels | async" [value]="level.id" >
+        {{ level.nombre }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
-<mat-form-field>
-  <mat-select placeholder="Select Notion: ">
-    <mat-option *ngFor="let notion of notions" [value]="notion.id" >
-      {{ notion.value }}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+  <div class="flex-container">
+    <div materialize class="card medium activities-card" *ngFor="let activity of activities | async" (click)="selectActivity(activity)" >
+      <div class="card-image">
+          <img mat-card-image src="../../assets/activities_images/activity{{ activity.id }}.png">
+          <span>{{ activity.nombre }}</span>
+      </div>
+      <div class="card-content">
+          <mat-card-content>{{ activity.descripcion }}</mat-card-content>
+      </div>
+    </div>
+  </div>
 
-<mat-form-field>
-  <mat-select placeholder="Select Sub Notion: ">
-    <mat-option *ngFor="let subnotion of subnotions" [value]="subnotion.id" >
-      {{ subnotion.value }}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-      
-<button mat-button>Generate Sequence</button>
+  <button mat-raised-button color="primary">Generate Sequence</button>
+</div>

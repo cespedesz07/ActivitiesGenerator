@@ -9,6 +9,7 @@ import { URL_LIST } from '../url-list'
 
 import { Nivel } from '../../model/Nivel';
 import { Actividad } from '../../model/Actividad';
+import { Texto } from '../../model/Texto';
 
 
 @Injectable()
@@ -24,7 +25,11 @@ export class ParametersService {
   }
 
   getActivities(): Observable< Actividad[] > {
-    return this.http.get< Actividad[] >( URL_LIST.actividadAll );
+    return this.http.get<Actividad[]>( URL_LIST.actividadAll );
+  }
+
+  getTexts( nivel: string ): Observable< Texto[] > {
+    return this.http.get<Texto[]>( URL_LIST.textoByNivel.replace("{0}", nivel) );
   }
 
 }

@@ -1,23 +1,49 @@
 <div class="flex-container">
-  <mat-form-field color="primary">
-    <mat-select placeholder="Select Level: ">
-      <mat-option *ngFor="let level of levels | async" [value]="level.id" >
-        {{ level.nombre }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-
-  <div class="flex-container">
-    <div materialize class="card medium activities-card" *ngFor="let activity of activities | async" (click)="selectActivity(activity)" >
-      <div class="card-image">
-          <img mat-card-image src="../../assets/activities_images/activity{{ activity.id }}.png">
-          <span>{{ activity.nombre }}</span>
+  <form>
+    <mat-form-field color="primary">
+      <div class="input field">
+        <input matInput placeholder="Secuence Name" 
+          [(ngModel)]="secuenciaActividad.nombre" 
+          name="secuenciaActividad.nombre" required/>
       </div>
-      <div class="card-content">
-          <mat-card-content>{{ activity.descripcion }}</mat-card-content>
+    </mat-form-field>
+
+    <mat-form-field color="primary">
+      <mat-select placeholder="Select Level: " 
+        (change)="getTexts()" 
+        [(ngModel)]="secuenciaActividad.nivel_idioma" 
+        name="secuenciaActividad.nivel_idioma" required>
+        <mat-option *ngFor="let level of levels | async" 
+          [value]="level.id" >
+          {{ level.nombre }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field color="primary">
+      <mat-select placeholder="Select Text: "
+        [(ngModel)]="secuenciaActividad.idtexto" name="secuenciaActividad.idtexto" required>
+        <mat-option *ngFor="let text of texts | async" [value]="text.id" >
+          {{ text.titulo_doc }} - {{ text.autor }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="flex-container">
+      <div materialize class="card medium activities-card" 
+        *ngFor="let activity of activities | async" 
+        (click)="checkActivity(activity)" 
+        [ngClass]="{ 'card-selected': isActivitySelected(activity) }"  >
+        <div class="card-image">
+            <img mat-card-image src="../../assets/activities_images/activity{{ activity.id }}.png">
+            <span>{{ activity.nombre }}</span>
+        </div>
+        <div class="card-content">
+            <mat-card-content>{{ activity.descripcion }}</mat-card-content>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
 
-  <button mat-raised-button color="primary">Generate Sequence</button>
+  <button type="submit" mat-raised-button color="primary" (click)="showObject()">Save Sequence</button>
 </div>

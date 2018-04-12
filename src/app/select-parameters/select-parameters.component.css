@@ -19,3 +19,7 @@
 .activities-card:hover {
   box-shadow: rgb(0, 0, 0);
 }
+
+.card-selected {
+  background-color: black;
+}

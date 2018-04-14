@@ -7,6 +7,7 @@ import { Nivel } from '../model/Nivel';
 import { Actividad } from '../model/Actividad';
 import { SecuenciaActividades } from '../model/SecuenciaActividades';
 import { Texto } from '../model/Texto';
+import { element } from 'protractor';
 
 @Component({
   selector: 'select-parameters',
@@ -38,7 +39,7 @@ export class SelectParametersComponent implements OnInit {
   }
 
   getTexts(): void {
-    this.texts = this.parametersService.getTexts( this.secuenciaActividad.nivel_idioma );
+    this.texts = this.parametersService.getTexts( this.secuenciaActividad.idNivel );
   }
 
   ngOnInit() {
@@ -52,20 +53,33 @@ export class SelectParametersComponent implements OnInit {
     }
     else{
       this.selectedActivities.push( activity.id );
-    }    
+    }
   }
 
   isActivitySelected( activity: Actividad ) {
     return this.selectedActivities.indexOf( activity.id ) !== -1;
   }
 
-  saveSequence() {
-    this.secuenciaActividad.usuario_realizador = "scespedesz";
-    this.secuenciaActividad.fecha_generacion = new Date().getTime().toString(); 
+  getActivitiesObjects( activitiesLoaded: Actividad[] ) {
+    let activitiesToSave: Actividad[] = [];
+    this.selectedActivities.forEach( index => {
+      let activityToSave = activitiesLoaded.filter( (element) => {
+        if (element.id === index) {
+          return element;
+        }
+      });
+      activitiesToSave.push( activityToSave[0] );
+    });
+    return activitiesToSave;
   }
 
-  showObject() {
-    console.log( this.secuenciaActividad );
+  saveSequence() {
+    this.secuenciaActividad.idUsuarioRealizador = 1;
+    this.secuenciaActividad.fechaGeneracion = new Date().getTime().toString(); 
+    this.activities.subscribe( activitiesLoaded => { 
+      this.secuenciaActividad.actividades = this.getActivitiesObjects( activitiesLoaded );
+      this.parametersService.saveSequence( this.secuenciaActividad );
+    });
   }
 
 }

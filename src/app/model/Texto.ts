@@ -1,8 +1,10 @@
+import { Nivel } from "./Nivel";
+
 export class Texto {
   id: number;
-  titulo_doc: string;
+  tituloDoc: string;
   autor: string;
   fuente: string;
   fecha: string;
-  nivel: number;
+  nivel: Nivel;
 }

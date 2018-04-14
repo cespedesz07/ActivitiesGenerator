@@ -11,8 +11,7 @@
     <mat-form-field color="primary">
       <mat-select placeholder="Select Level: " 
         (change)="getTexts()" 
-        [(ngModel)]="secuenciaActividad.nivel_idioma" 
-        name="secuenciaActividad.nivel_idioma" required>
+        [(ngModel)]="secuenciaActividad.idNivel" name="secuenciaActividad.idNivel" required>
         <mat-option *ngFor="let level of levels | async" 
           [value]="level.id" >
           {{ level.nombre }}
@@ -22,9 +21,9 @@
 
     <mat-form-field color="primary">
       <mat-select placeholder="Select Text: "
-        [(ngModel)]="secuenciaActividad.idtexto" name="secuenciaActividad.idtexto" required>
+        [(ngModel)]="secuenciaActividad.idTexto" name="secuenciaActividad.idTexto" required>
         <mat-option *ngFor="let text of texts | async" [value]="text.id" >
-          {{ text.titulo_doc }} - {{ text.autor }}
+          {{ text.tituloDoc }} - {{ text.autor }}
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -45,5 +44,5 @@
     </div>
   </form>
 
-  <button type="submit" mat-raised-button color="primary" (click)="showObject()">Save Sequence</button>
+  <button type="submit" mat-raised-button color="primary" (click)="saveSequence()">Save Sequence</button>
 </div>

@@ -7,5 +7,6 @@ export class SecuenciaActividades {
   idUsuarioRealizador: number;
   idTexto: number;
   idNivel: number;
+  idNocion: number;
   actividades: Actividad[];
 }

@@ -12,10 +12,16 @@ import { MaterializeModule } from "angular2-materialize";
 import { AppComponent } from './app.component';
 import { SelectParametersComponent } from './select-parameters/select-parameters.component';
 import { SequencesListComponent } from './sequences-list/sequences-list.component';
+import { DeleteSequenceModalComponent } from './sequences-list/delete-sequence-modal/delete-sequence-modal.component';
 
 import { ParametersService } from './services/parameters/parameters.service';
 import { SequenceService } from './services/sequence/sequence.service';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { ActivitiesViewerComponent } from './activities-viewer/activities-viewer.component';
+import { ActivityGenerationService } from './services/activity-generation/activity-generation.service';
+import { LocationActivityComponent } from './activities-viewer/location-activity/location-activity.component';
+import { SystematizationActivityComponent } from './activities-viewer/systematization-activity/systematization-activity.component';
+import { SafeHtmlPipe } from './modules/pipes/safe-html.pipe';
 
 
 // Initialize Firebase
@@ -33,7 +39,12 @@ export const config = {
   declarations: [
     AppComponent,
     SelectParametersComponent,
-    SequencesListComponent
+    SequencesListComponent,
+    DeleteSequenceModalComponent,
+    ActivitiesViewerComponent,
+    LocationActivityComponent,
+    SystematizationActivityComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
@@ -49,8 +60,10 @@ export const config = {
   providers: [
     ParametersService,
     SequenceService,
+    ActivityGenerationService,
     AngularFireDatabase
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DeleteSequenceModalComponent]
 })
 export class AppModule { }

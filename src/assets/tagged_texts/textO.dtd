@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT corpus (encabezado, contenido)>
+
+<!ATTLIST corpus
+    id_doc     ID        #REQUIRED
+>
+
+
+<!ELEMENT encabezado (titulo_doc, autor, fuente, fecha, nivel)>
+
+<!ELEMENT titulo_doc (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT fuente (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+
+
+<!ELEMENT contenido (sentence+)>
+<!ELEMENT sentence (token+)>
+<!ELEMENT token  (#PCDATA) >
+<!ATTLIST sentence
+    id  CDATA  #REQUIRED
+    
+>
+
+<!ATTLIST token
+    id              CDATA  #REQUIRED
+    lemma           CDATA  #REQUIRED   
+    form            CDATA  #REQUIRED
+    tag             (PRPos|WPos|JJ|JJR|I|JJS|POS|RB|RBR|RBS|WRB|CC|DT|WDT|PDT|UH|NNS|NN|NNP|NP00000|NP|NP00G00|NP00O00|NP00V00|NP00SP0|NNPS|RP|TO|IN|EX|WP|PRP|Fd|Fc|Flt|Fla|Fs|Fat|Faa|Fg|Fz|Fpt|Fpa|Ft|Fp|Fit|Fia|Fe|Frc|Fra|Fx|Fh|Fct|Fca|MD|VBG|VB|VBN|VBD|VBP|VBZ|W|Z|Zp|Zm|Zu)  #REQUIRED
+    ctag            (PRPos|WPos|JJ|JJR|I|JJS|POS|RB|RBR|RBS|WRB|CC|DT|WDT|PDT|UH|NNS|NN|NNP|NP00000|NP|NP00G00|NP00O00|NP00V00|NP00SP0|NNPS|RP|TO|IN|EX|WP|PRP|Fd|Fc|Flt|Fla|Fs|Fat|Faa|Fg|Fz|Fpt|Fpa|Ft|Fp|Fit|Fia|Fe|Frc|Fra|Fx|Fh|Fct|Fca|MD|VBG|VB|VBN|VBD|VBP|VBZ|W|Z|Zp|Zm|Zu)  #REQUIRED      
+    pos             (adjective|adposition|adverb|conjunction|date|determiner|interjection|noun|number|particle|preposition|pronoun|punctuation|verb)  #REQUIRED
+    type            (currency|unit|possessive|general|interrogative|coordinating|predeterminer|common|proper|to|personal|colon|comma|curlybracket|etc|exclamationmark|hyphen|other|parenthesis|percentage|period|questionmark|quotation|semicolon|slash|squarebracket|modal)  #IMPLIED
+    num             (plural|singular)  #IMPLIED
+    vform           (gerund|infinitive|participle|past|personal)  #IMPLIED
+    punctenclose    (open|close)  #IMPLIED
+    person          (3)  #IMPLIED
+    degree          (comparative|superlative) #IMPLIED
+    neclass         (location|organization|other|person) #IMPLIED
+>

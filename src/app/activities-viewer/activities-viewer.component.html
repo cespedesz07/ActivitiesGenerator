@@ -1,0 +1,17 @@
+<div class="activities-viewer-container">
+  <div class="cards-container">
+    <mat-card *ngFor="let activity of activitiesSequence | async">
+      <mat-card-header>
+        <mat-card-title>{{ activity.nombre }}</mat-card-title>
+        <mat-card-subtitle>{{ activity.descripcion }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../assets/activities_images/activity{{ activity.id }}.png">
+      
+      <mat-card-actions align="end">
+        <button mat-raised-button color="primary" (click)="openActivity(activity.id)">Open</button>
+      </mat-card-actions>
+      
+    </mat-card>
+  </div>
+  
+</div>

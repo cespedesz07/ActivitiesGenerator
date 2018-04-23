@@ -1,34 +1,52 @@
 <div class="mat-elevation-z8">
-  <mat-table #table [dataSource]="activitiesSequence">
+  <div class="table-container" [hidden]="!areSequencesLoaded">
+    <mat-table #table [dataSource]="sequencesList">
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>>
+    
+        <!-- Nombre -->
+        <ng-container matColumnDef="nombre">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+          </ng-container>
+    
+        <!-- Fecha Generacion -->
+        <ng-container matColumnDef="fechaGeneracion">
+          <mat-header-cell *matHeaderCellDef> Created On </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.fechaGeneracion | date}} </mat-cell>
+        </ng-container>
+    
+        <!-- Usuario -->
+        <ng-container matColumnDef="idUsuarioRealizador">
+          <mat-header-cell *matHeaderCellDef> Created By </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.idUsuarioRealizador}} </mat-cell>
+        </ng-container>
+    
+        <!-- Nivel -->
+        <ng-container matColumnDef="idNivel">
+          <mat-header-cell *matHeaderCellDef> Level </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.idNivel}} </mat-cell>
+        </ng-container>
 
-    <!-- fecha_generacion -->
-    <ng-container matColumnDef="fecha_generacion">
-      <mat-header-cell *matHeaderCellDef> fecha_generacion </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.fecha_generacion}} </mat-cell>
-    </ng-container>
-
-    <!-- usuario_realizador -->
-    <ng-container matColumnDef="usuario_realizador">
-      <mat-header-cell *matHeaderCellDef> usuario_realizador </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.usuario_realizador}} </mat-cell>
-    </ng-container>
-
-    <!-- nivel_idioma -->
-    <ng-container matColumnDef="nivel_idioma">
-      <mat-header-cell *matHeaderCellDef> nivel_idioma </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.nivel_idioma}} </mat-cell>
-    </ng-container>
-
-    <!-- Actions -->
-<!--     
-    <ng-container matColumnDef="actions">
-      <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
-      <mat-cell *matCellDef="let row">
-        <button mat-button (click)=> Edit </button>  
-      </mat-cell>
-    </ng-container> -->
-
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>  
+        <!-- Nocion -->
+        <ng-container matColumnDef="idNocion">
+          <mat-header-cell *matHeaderCellDef> Notion </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.idNocion}} </mat-cell>
+        </ng-container>
+    
+        <!-- Actions -->    
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+          <mat-cell *matCellDef="let sequenceRow">
+              <button mat-button (click)="viewSequence(sequenceRow)">View</button>
+            <button mat-button>Edit</button>
+            <button mat-button (click)="openDeleteSequenceModal(sequenceRow)">Delete</button>
+          </mat-cell>
+        </ng-container>
+    </mat-table>  
+  </div>
+  
+  <div class="no-records-msg" [hidden]="areSequencesLoaded">
+    <span>No hay Secuencias de Actividades Creadas</span>
+  </div>
 </div>

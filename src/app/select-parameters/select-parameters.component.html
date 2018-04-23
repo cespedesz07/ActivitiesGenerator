@@ -10,11 +10,21 @@
 
     <mat-form-field color="primary">
       <mat-select placeholder="Select Level: " 
-        (change)="getTexts()" 
+        (change)="getTexts(); getNotions()" 
         [(ngModel)]="secuenciaActividad.idNivel" name="secuenciaActividad.idNivel" required>
         <mat-option *ngFor="let level of levels | async" 
           [value]="level.id" >
           {{ level.nombre }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field color="primary">
+      <mat-select placeholder="Select Notion: "
+        [(ngModel)]="secuenciaActividad.idNocion" name="secuenciaActividad.idNocion" required>
+        <mat-option *ngFor="let notion of notions" 
+          [value]="notion.id" >
+          {{ notion.nombre }}
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -26,22 +36,7 @@
           {{ text.tituloDoc }} - {{ text.autor }}
         </mat-option>
       </mat-select>
-    </mat-form-field>
-
-    <div class="flex-container">
-      <div materialize class="card medium activities-card" 
-        *ngFor="let activity of activities | async" 
-        (click)="checkActivity(activity)" 
-        [ngClass]="{ 'card-selected': isActivitySelected(activity) }"  >
-        <div class="card-image">
-            <img mat-card-image src="../../assets/activities_images/activity{{ activity.id }}.png">
-            <span>{{ activity.nombre }}</span>
-        </div>
-        <div class="card-content">
-            <mat-card-content>{{ activity.descripcion }}</mat-card-content>
-        </div>
-      </div>
-    </div>
+    </mat-form-field>    
   </form>
 
   <button type="submit" mat-raised-button color="primary" (click)="saveSequence()">Save Sequence</button>

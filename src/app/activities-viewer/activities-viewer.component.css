@@ -1,0 +1,25 @@
+.activities-viewer-container .custom-color {
+  background-color: #b3e5fc !important;
+}
+.activities-viewer-container .activity-loader {
+  word-wrap: break-word;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-container {
+  display: flex;
+  margin: 6%;
+}
+
+.cards-container mat-card{
+  margin: 0 20px;
+}
+
+.word-input {
+  background-color: white;
+  display: inline-block;
+  width: 7%;
+  border-radius: 8px;
+}

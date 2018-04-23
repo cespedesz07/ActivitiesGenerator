@@ -1,0 +1,1296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE corpus SYSTEM "textO.dtd">
+<corpus id_doc="t1C1">
+  <encabezado>
+    <titulo_doc>Philosophy</titulo_doc>
+    <autor>Julie Bray</autor>
+    <fuente>"https://learnenglish.britishcouncil.org/en/magazine/philosophy"</fuente>
+    <fecha>Marzo 2018</fecha>
+    <nivel>C1-CECR</nivel>
+  </encabezado>
+  <contenido>
+    <sentence id="1">
+      <token id="t1.1" form="﻿" lemma="﻿" tag="Fz" ctag="Fz" pos="punctuation" type="other"> </token>
+      <token id="t1.2" form="Philosophy" lemma="philosophy" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t1.3" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="2">
+      <token id="t2.1" form="By" lemma="by" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t2.2" form="Julie_Bray" lemma="julie_bray" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t2.3" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="3">
+      <token id="t3.1" form="“" lemma="“" tag="Fra" ctag="Fra" pos="punctuation" type="quotation"
+        punctenclose="open"> </token>
+      <token id="t3.2" form="We" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t3.3" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t3.4" form="such" lemma="such" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t3.5" form="stuff" lemma="stuff" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t3.6" form="as" lemma="as" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t3.7" form="dreams" lemma="dream" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t3.8" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t3.9" form="made" lemma="make" tag="VBN" ctag="VBN" pos="verb" vform="participle"> </token>
+      <token id="t3.10" form="on" lemma="on" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t3.11" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t3.12" form="our" lemma="our" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t3.13" form="little" lemma="little" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t3.14" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t3.15" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t3.16" form="rounded" lemma="round" tag="VBN" ctag="VBN" pos="verb"
+        vform="participle"> </token>
+      <token id="t3.17" form="with" lemma="with" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t3.18" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t3.19" form="sleep" lemma="sleep" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t3.20" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"> </token>
+      <token id="t3.21" form="”" lemma="”" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t3.22" form="(" lemma="(" tag="Fpa" ctag="Fpa" pos="punctuation" type="parenthesis"
+        punctenclose="open"> </token>
+      <token id="t3.23" form="Shakespeare" lemma="shakespeare" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t3.24" form=")" lemma=")" tag="Fpt" ctag="Fpt" pos="punctuation" type="parenthesis"
+        punctenclose="close"> </token>
+      <token id="t3.25" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="4">
+      <token id="t4.1" form="Does" lemma="do" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t4.2" form="this" lemma="this" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t4.3" form="sentence" lemma="sentence" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t4.4" form="make" lemma="make" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t4.5" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t4.6" form="think" lemma="think" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t4.7" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation" type="questionmark"
+        punctenclose="close"> </token>
+    </sentence>
+    <sentence id="5">
+      <token id="t5.1" form="What" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t5.2" form="does" lemma="do" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t5.3" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t5.4" form="make" lemma="make" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t5.5" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t5.6" form="think" lemma="think" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t5.7" form="about" lemma="about" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t5.8" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation" type="questionmark"
+        punctenclose="close"> </token>
+    </sentence>
+    <sentence id="6">
+      <token id="t6.1" form="Shakespeare" lemma="shakespeare" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t6.2" form="was" lemma="be" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t6.3" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t6.4" form="dreamer" lemma="dreamer" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t6.5" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t6.6" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t6.7" form="some" lemma="some" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t6.8" form="say" lemma="say" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t6.9" form="he" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t6.10" form="was" lemma="be" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t6.11" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t6.12" form="philosopher" lemma="philosopher" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t6.13" form="too" lemma="too" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t6.14" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="7">
+      <token id="t7.1" form="In" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t7.2" form="this" lemma="this" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t7.3" form="sentence" lemma="sentence" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t7.4" form="he" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t7.5" form="tells" lemma="tell" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t7.6" form="us" lemma="us" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t7.7" form="that" lemma="that" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t7.8" form="our" lemma="our" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t7.9" form="lives" lemma="life" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t7.10" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t7.11" form="short" lemma="short" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t7.12" form="but" lemma="but" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t7.13" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t7.14" form="can" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t7.15" form="think" lemma="think" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t7.16" form="up" lemma="up" tag="RP" ctag="RP" pos="particle"> </token>
+      <token id="t7.17" form="big" lemma="big" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t7.18" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t7.19" form="important" lemma="important" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t7.20" form="ideas" lemma="idea" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t7.21" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t7.22" form="that" lemma="that" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t7.23" form="short" lemma="short" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t7.24" form="time" lemma="time" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t7.25" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="8">
+      <token id="t8.1" form="The" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t8.2" form="two" lemma="2" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t8.3" form="Greek" lemma="greek" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t8.4" form="words" lemma="word" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t8.5" form="–" lemma="–" tag="Fz" ctag="Fz" pos="punctuation" type="other"> </token>
+      <token id="t8.6" form="“" lemma="“" tag="Fra" ctag="Fra" pos="punctuation" type="quotation"
+        punctenclose="open"> </token>
+      <token id="t8.7" form="philo" lemma="phi_lo" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.8" form="”" lemma="”" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t8.9" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t8.10" form="which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t8.11" form="means" lemma="mean" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t8.12" form="love" lemma="love" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.13" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t8.14" form="“" lemma="“" tag="Fra" ctag="Fra" pos="punctuation" type="quotation"
+        punctenclose="open"> </token>
+      <token id="t8.15" form="sophia" lemma="sophia" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.16" form="”" lemma="”" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t8.17" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t8.18" form="which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t8.19" form="means" lemma="mean" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t8.20" form="wisdom" lemma="wisdom" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.21" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t8.22" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t8.23" form="beginnings" lemma="beginning" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t8.24" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t8.25" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t8.26" form="word" lemma="word" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.27" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t8.28" form="use" lemma="use" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t8.29" form="today" lemma="today" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.30" form=";" lemma=";" tag="Fx" ctag="Fx" pos="punctuation" type="semicolon"> </token>
+      <token id="t8.31" form="Philosophy" lemma="philosophy" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t8.32" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t8.33" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t8.34" form="love" lemma="love" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.35" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t8.36" form="wisdom" lemma="wisdom" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t8.37" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="9">
+      <token id="t9.1" form="Most" lemma="most" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t9.2" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t9.3" form="have" lemma="have" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t9.4" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t9.5" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t9.6" form="on" lemma="on" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t9.7" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t9.8" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="10">
+      <token id="t10.1" form="Everybody" lemma="everybody" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t10.2" form="has" lemma="have" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t10.3" form="an" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t10.4" form="idea" lemma="idea" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t10.5" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t10.6" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t10.7" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t10.8" form="right" lemma="right" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t10.9" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t10.10" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t10.11" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t10.12" form="wrong" lemma="wrong" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t10.13" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t10.14" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t10.15" form="why" lemma="why" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t10.16" form="things" lemma="thing" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t10.17" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t10.18" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t10.19" form="way" lemma="way" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t10.20" form="they" lemma="they" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t10.21" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t10.22" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t10.23" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t10.24" form="who" lemma="who" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t10.25" form="they" lemma="they" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t10.26" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t10.27" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t10.28" form="who" lemma="who" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t10.29" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t10.30" form="trust" lemma="trust" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t10.31" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="11">
+      <token id="t11.1" form="A_lot_of" lemma="a_lot_of" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t11.2" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t11.3" form="believe" lemma="believe" tag="VBP" ctag="VBP" pos="verb"
+        vform="personal"> </token>
+      <token id="t11.4" form="somebody" lemma="somebody" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t11.5" form="else" lemma="else" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t11.6" form="’" lemma="’" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t11.7" form="s" lemma="s" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t11.8" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t11.9" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="12">
+      <token id="t12.1" form="That" lemma="that" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t12.2" form="person" lemma="person" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t12.3" form="may" lemma="may" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t12.4" form="be" lemma="be" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t12.5" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t12.6" form="religious" lemma="religious" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t12.7" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t12.8" form="political" lemma="political" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t12.9" form="leader" lemma="leader" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t12.10" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t12.11" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t12.12" form="anybody" lemma="anybody" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t12.13" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t12.14" form="look" lemma="look" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t12.15" form="up" lemma="up" tag="RP" ctag="RP" pos="particle"> </token>
+      <token id="t12.16" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t12.17" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="13">
+      <token id="t13.1" form="Some" lemma="some" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t13.2" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t13.3" form="have" lemma="have" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t13.4" form="their" lemma="their" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t13.5" form="own" lemma="own" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t13.6" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t13.7" form="on" lemma="on" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t13.8" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t13.9" form="which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t13.10" form="might" lemma="may" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t13.11" form="be" lemma="be" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t13.12" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t13.13" form="mixture" lemma="mixture" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t13.14" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t13.15" form="theories" lemma="theory" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t13.16" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="14">
+      <token id="t14.1" form="Others" lemma="other" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t14.2" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t14.3" form="philosophers" lemma="philosopher" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t14.4" form=";" lemma=";" tag="Fx" ctag="Fx" pos="punctuation" type="semicolon"> </token>
+      <token id="t14.5" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t14.6" form="who" lemma="who" tag="WP" ctag="WP" pos="pronoun" type="interrogative"> </token>
+      <token id="t14.7" form="want" lemma="want" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t14.8" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t14.9" form="know" lemma="know" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t14.10" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t14.11" form="truth" lemma="truth" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t14.12" form="about" lemma="about" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t14.13" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t14.14" form="for" lemma="for" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t14.15" form="themselves" lemma="themselves" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t14.16" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t14.17" form="spend" lemma="spend" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t14.18" form="their" lemma="their" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t14.19" form="time" lemma="time" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t14.20" form="studying" lemma="study" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t14.21" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t14.22" form="thinking" lemma="think" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t14.23" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t14.24" form="asking" lemma="ask" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t14.25" form="questions" lemma="question" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t14.26" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="15">
+      <token id="t15.1" form="One" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t15.2" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t15.3" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t15.4" form="earliest" lemma="early" tag="JJS" ctag="JJS" pos="adjective"
+        degree="superlative"> </token>
+      <token id="t15.5" form="Eastern" lemma="eastern" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t15.6" form="philosophies" lemma="philosophy" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t15.7" form="was" lemma="be" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t15.8" form="Taoism" lemma="taoism" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t15.9" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t15.10" form="which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t15.11" form="came" lemma="come" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t15.12" form="from" lemma="from" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t15.13" form="China" lemma="china" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t15.14" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="16">
+      <token id="t16.1" form="We" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t16.2" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t16.3" form="all" lemma="all" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t16.4" form="aware" lemma="aware" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t16.5" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t16.6" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t16.7" form="yin" lemma="yin" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t16.8" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t16.9" form="yang" lemma="yang" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t16.10" form="halves" lemma="half" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t16.11" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t16.12" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t16.13" form="universe" lemma="universe" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t16.14" form="–" lemma="–" tag="Fz" ctag="Fz" pos="punctuation" type="other"> </token>
+      <token id="t16.15" form="nothing" lemma="nothing" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t16.16" form="can" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t16.17" form="exist" lemma="exist" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t16.18" form="without" lemma="without" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t16.19" form="its" lemma="its" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t16.20" form="opposite" lemma="opposite" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t16.21" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="17">
+      <token id="t17.1" form="Another" lemma="another" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t17.2" form="great" lemma="great" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t17.3" form="eastern" lemma="eastern" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t17.4" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t17.5" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t17.6" form="Buddhism" lemma="buddhism" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t17.7" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t17.8" form="which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t17.9" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t17.10" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t17.11" form="religion" lemma="religion" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t17.12" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t17.13" form="also" lemma="also" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t17.14" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t17.15" form="system" lemma="system" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t17.16" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t17.17" form="beliefs" lemma="belief" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t17.18" form="which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t17.19" form="help" lemma="help" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t17.20" form="us" lemma="us" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t17.21" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t17.22" form="understand" lemma="understand" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t17.23" form="ourselves" lemma="ourselves" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t17.24" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t17.25" form="others" lemma="other" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t17.26" form="better" lemma="well" tag="RBR" ctag="RBR" pos="adverb" type="general"
+        degree="comparative"> </token>
+      <token id="t17.27" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="18">
+      <token id="t18.1" form="One" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t18.2" form="branch" lemma="branch" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t18.3" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t18.4" form="western" lemma="western" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t18.5" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t18.6" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t18.7" form="Existentialism" lemma="existentialism" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t18.8" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t18.9" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t18.10" form="very" lemma="very" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t18.11" form="similar" lemma="similar" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t18.12" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t18.13" form="Buddhist" lemma="buddhist" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t18.14" form="ideas" lemma="idea" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t18.15" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="19">
+      <token id="t19.1" form="Both" lemma="both" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t19.2" form="ask" lemma="ask" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t19.3" form="questions" lemma="question" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t19.4" form="about" lemma="about" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t19.5" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t19.6" form="really" lemma="really" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t19.7" form="exists" lemma="exist" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t19.8" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t19.9" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t19.10" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t19.11" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t19.12" form="help" lemma="help" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t19.13" form="us" lemma="us" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t19.14" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t19.15" form="decide" lemma="decide" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t19.16" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t19.17" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t19.18" form="important" lemma="important" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t19.19" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="20">
+      <token id="t20.1" form="The" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t20.2" form="first" lemma="1" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t20.3" form="western" lemma="western" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t20.4" form="philosophers" lemma="philosopher" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t20.5" form="lived" lemma="live" tag="VBN" ctag="VBN" pos="verb" vform="participle"> </token>
+      <token id="t20.6" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t20.7" form="Greece" lemma="greece" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t20.8" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="21">
+      <token id="t21.1" form="They" lemma="they" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t21.2" form="encouraged" lemma="encourage" tag="VBD" ctag="VBD" pos="verb"
+        vform="past"> </token>
+      <token id="t21.3" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t21.4" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t21.5" form="find" lemma="find" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t21.6" form="their" lemma="their" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t21.7" form="own" lemma="own" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t21.8" form="answers" lemma="answer" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t21.9" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t21.10" form="questions" lemma="question" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t21.11" form="about" lemma="about" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t21.12" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t21.13" form="instead_of" lemma="instead_of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t21.14" form="believing" lemma="believe" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t21.15" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t21.16" form="Gods" lemma="gods" tag="NP" ctag="NP" pos="noun" type="proper"> </token>
+      <token id="t21.17" form="did" lemma="do" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t21.18" form="everything" lemma="everything" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t21.19" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="22">
+      <token id="t22.1" form="Socrates" lemma="so_crate" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t22.2" form="was" lemma="be" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t22.3" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t22.4" form="most" lemma="most" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t22.5" form="famous" lemma="famous" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t22.6" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t22.7" form="these" lemma="these" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t22.8" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="23">
+      <token id="t23.1" form="He" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t23.2" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t23.3" form="one" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t23.4" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t23.5" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t23.6" form="most" lemma="most" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t23.7" form="famous" lemma="famous" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t23.8" form="philosophers" lemma="philosopher" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t23.9" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t23.10" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t23.11" form="world" lemma="world" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t23.12" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t23.13" form="yet" lemma="yet" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t23.14" form="he" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t23.15" form="said" lemma="say" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t23.16" form="‘" lemma="‘" tag="Fra" ctag="Fra" pos="punctuation" type="quotation"
+        punctenclose="open"> </token>
+      <token id="t23.17" form="one" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t23.18" form="thing" lemma="thing" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t23.19" form="I" lemma="i" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t23.20" form="know" lemma="know" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t23.21" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t23.22" form="that" lemma="that" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t23.23" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t23.24" form="that" lemma="that" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t23.25" form="I" lemma="i" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t23.26" form="know" lemma="know" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t23.27" form="nothing" lemma="nothing" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t23.28" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"> </token>
+      <token id="t23.29" form="’" lemma="’" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t23.30" form="This" lemma="this" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t23.31" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t23.32" form="why" lemma="why" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t23.33" form="he" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t23.34" form="never" lemma="never" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t23.35" form="wrote" lemma="write" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t23.36" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t23.37" form="lectured" lemma="lecture" tag="VBD" ctag="VBD" pos="verb"
+        vform="past"> </token>
+      <token id="t23.38" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="24">
+      <token id="t24.1" form="He" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t24.2" form="only" lemma="only" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t24.3" form="discussed" lemma="discuss" tag="VBN" ctag="VBN" pos="verb"
+        vform="participle"> </token>
+      <token id="t24.4" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="25">
+      <token id="t25.1" form="He" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t25.2" form="did" lemma="do" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t25.3" form="not" lemma="not" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t25.4" form="believe" lemma="believe" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t25.5" form="he" lemma="he" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t25.6" form="could" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t25.7" form="tell" lemma="tell" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t25.8" form="anybody" lemma="anybody" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t25.9" form="anything" lemma="anything" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t25.10" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t25.11" form="that" lemma="that" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t25.12" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t25.13" form="was" lemma="be" tag="VBD" ctag="VBD" pos="verb" vform="past"> </token>
+      <token id="t25.14" form="better" lemma="well" tag="RBR" ctag="RBR" pos="adverb" type="general"
+        degree="comparative"> </token>
+      <token id="t25.15" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t25.16" form="encourage" lemma="encourage" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t25.17" form="individual" lemma="individual" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t25.18" form="thinking" lemma="think" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t25.19" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="26">
+      <token id="t26.1" form="Today" lemma="today" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t26.2" form="philosophers" lemma="philosopher" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t26.3" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t26.4" form="still" lemma="still" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t26.5" form="encouraging" lemma="encourage" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t26.6" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t26.7" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t26.8" form="think" lemma="think" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t26.9" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="27">
+      <token id="t27.1" form="Schools" lemma="school" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t27.2" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t27.3" form="some" lemma="some" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t27.4" form="countries" lemma="country" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t27.5" form="teach" lemma="teach" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t27.6" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t27.7" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t27.8" form="children" lemma="child" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t27.9" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="28">
+      <token id="t28.1" form="Reading" lemma="read" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t28.2" form="books" lemma="book" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t28.3" form="written" lemma="write" tag="VBN" ctag="VBN" pos="verb"
+        vform="participle"> </token>
+      <token id="t28.4" form="by" lemma="by" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t28.5" form="old" lemma="old" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t28.6" form="philosophers" lemma="philosopher" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t28.7" form="can" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t28.8" form="be" lemma="be" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t28.9" form="difficult" lemma="difficult" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t28.10" form="because" lemma="because" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t28.11" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t28.12" form="language" lemma="language" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t28.13" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t28.14" form="from" lemma="from" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t28.15" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t28.16" form="past" lemma="past" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t28.17" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="29">
+      <token id="t29.1" form="So" lemma="so" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t29.2" form="stories" lemma="story" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t29.3" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t29.4" form="used" lemma="use" tag="VBN" ctag="VBN" pos="verb" vform="participle"> </token>
+      <token id="t29.5" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t29.6" form="help" lemma="help" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t29.7" form="schoolchildren" lemma="schoolchild" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t29.8" form="make" lemma="make" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t29.9" form="their" lemma="their" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t29.10" form="own" lemma="own" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t29.11" form="decisions" lemma="decision" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t29.12" form="about" lemma="about" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t29.13" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t29.14" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t29.15" form="right" lemma="right" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t29.16" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t29.17" form="wrong" lemma="wrong" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t29.18" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t29.19" form="think" lemma="think" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t29.20" form="about" lemma="about" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t29.21" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t29.22" form="best" lemma="good" tag="JJS" ctag="JJS" pos="adjective"
+        degree="superlative"> </token>
+      <token id="t29.23" form="way" lemma="way" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t29.24" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t29.25" form="solve" lemma="solve" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t29.26" form="problems" lemma="problem" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t29.27" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="30">
+      <token id="t30.1" form="Why" lemma="why" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t30.2" form="do" lemma="do" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t30.3" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t30.4" form="need" lemma="need" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t30.5" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t30.6" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="31">
+      <token id="t31.1" form="There" lemma="there" tag="EX" ctag="EX" pos="pronoun"> </token>
+      <token id="t31.2" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t31.3" form="plenty_of" lemma="plenty_of" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t31.4" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t31.5" form="who" lemma="who" tag="WP" ctag="WP" pos="pronoun" type="interrogative"> </token>
+      <token id="t31.6" form="think" lemma="think" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t31.7" form="that" lemma="that" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t31.8" form="killing" lemma="kill" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t31.9" form="animals" lemma="animal" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t31.10" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t31.11" form="cruel" lemma="cruel" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t31.12" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t31.13" form="but" lemma="but" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t31.14" form="eating" lemma="eat" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t31.15" form="animals" lemma="animal" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t31.16" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t31.17" form="fine" lemma="fine" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t31.18" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="32">
+      <token id="t32.1" form="If" lemma="if" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t32.2" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t32.3" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t32.4" form="one" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t32.5" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t32.6" form="these" lemma="these" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t32.7" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t32.8" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t32.9" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t32.10" form="should" lemma="should" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t32.11" form="ask" lemma="ask" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t32.12" form="yourself" lemma="yourself" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t32.13" form="why" lemma="why" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t32.14" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="33">
+      <token id="t33.1" form="Why" lemma="why" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t33.2" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t33.3" form="killing" lemma="kill" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t33.4" form="animals" lemma="animal" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t33.5" form="cruel" lemma="cruel" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t33.6" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="34">
+      <token id="t34.1" form="Why" lemma="why" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t34.2" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t34.3" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t34.4" form="okay" lemma="okay" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t34.5" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t34.6" form="eat" lemma="eat" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t34.7" form="animals" lemma="animal" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t34.8" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="35">
+      <token id="t35.1" form="You" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t35.2" form="might" lemma="may" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t35.3" form="find" lemma="find" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t35.4" form="that" lemma="that" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t35.5" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t35.6" form="answer" lemma="answer" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t35.7" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t35.8" form="each" lemma="each" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t35.9" form="question" lemma="question" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t35.10" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t35.11" form="very" lemma="very" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t35.12" form="different" lemma="different" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t35.13" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t35.14" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t35.15" form="could" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t35.16" form="have" lemma="have" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t35.17" form="an" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t35.18" form="argument" lemma="argument" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t35.19" form="by" lemma="by" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t35.20" form="yourself" lemma="yourself" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t35.21" form="using" lemma="use" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t35.22" form="your" lemma="your" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t35.23" form="own" lemma="own" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t35.24" form="ideas" lemma="idea" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t35.25" form="!" lemma="!" tag="Fat" ctag="Fat" pos="punctuation"
+        type="exclamationmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="36">
+      <token id="t36.1" form="Go" lemma="go" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t36.2" form="on" lemma="on" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t36.3" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t36.4" form="argue" lemma="argue" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t36.5" form="-" lemma="-" tag="Fg" ctag="Fg" pos="punctuation" type="hyphen"> </token>
+      <token id="t36.6" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t36.7" form="will" lemma="will" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t36.8" form="understand" lemma="understand" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t36.9" form="more" lemma="more" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t36.10" form="about" lemma="about" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t36.11" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t36.12" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t36.13" form="believe" lemma="believe" tag="VBP" ctag="VBP" pos="verb"
+        vform="personal"> </token>
+      <token id="t36.14" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="37">
+      <token id="t37.1" form="You" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t37.2" form="will" lemma="will" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t37.3" form="begin" lemma="begin" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t37.4" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t37.5" form="understand" lemma="understand" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t37.6" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t37.7" form="subject" lemma="subject" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t37.8" form="more" lemma="more" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t37.9" form="deeply" lemma="deeply" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t37.10" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="38">
+      <token id="t38.1" form="And" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t38.2" form="this" lemma="this" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t38.3" form="helps" lemma="help" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t38.4" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t38.5" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t38.6" form="feel" lemma="feel" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t38.7" form="comfortable" lemma="comfortable" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t38.8" form="with" lemma="with" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t38.9" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t38.10" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="39">
+      <token id="t39.1" form="And" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t39.2" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t39.3" form="might" lemma="may" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t39.4" form="change" lemma="change" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t39.5" form="something" lemma="something" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t39.6" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t39.7" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t39.8" form="might" lemma="may" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t39.9" form="not" lemma="not" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t39.10" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="40">
+      <token id="t40.1" form="When" lemma="when" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t40.2" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t40.3" form="ask" lemma="ask" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t40.4" form="ourselves" lemma="ourselves" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t40.5" form="questions" lemma="question" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t40.6" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t40.7" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t40.8" form="start" lemma="start" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t40.9" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t40.10" form="understand" lemma="understand" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t40.11" form="ourselves" lemma="ourselves" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t40.12" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t40.13" form="our" lemma="our" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t40.14" form="lives" lemma="life" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t40.15" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t40.16" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t40.17" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t40.18" form="’" lemma="’" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t40.19" form="s" lemma="s" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t40.20" form="up" lemma="up" tag="RP" ctag="RP" pos="particle"> </token>
+      <token id="t40.21" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t40.22" form="us" lemma="us" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t40.23" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t40.24" form="make" lemma="make" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t40.25" form="changes" lemma="change" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t40.26" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t40.27" form="not" lemma="not" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t40.28" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="41">
+      <token id="t41.1" form="If" lemma="if" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t41.2" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t41.3" form="ideas" lemma="idea" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t41.4" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t41.5" form="your" lemma="your" tag="PRPos" ctag="PRPos" pos="pronoun"
+        type="possessive"> </token>
+      <token id="t41.6" form="head" lemma="head" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t41.7" form="agree" lemma="agree" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t41.8" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t41.9" form="this" lemma="this" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t41.10" form="means" lemma="mean" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t41.11" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t41.12" form="have" lemma="have" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t41.13" form="integrity" lemma="integrity" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t41.14" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="42">
+      <token id="t42.1" form="What" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t42.2" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t42.3" form="say" lemma="say" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t42.4" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t42.5" form="what" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t42.6" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t42.7" form="do" lemma="do" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t42.8" form="are" lemma="be" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t42.9" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t42.10" form="same" lemma="same" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t42.11" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="43">
+      <token id="t43.1" form="Everyone" lemma="everyone" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t43.2" form="respects" lemma="respect" tag="VBZ" ctag="VBZ" pos="verb"
+        vform="personal" person="3"> </token>
+      <token id="t43.3" form="someone" lemma="someone" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t43.4" form="who" lemma="who" tag="WP" ctag="WP" pos="pronoun" type="interrogative"> </token>
+      <token id="t43.5" form="has" lemma="have" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t43.6" form="integrity" lemma="integrity" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t43.7" form="!" lemma="!" tag="Fat" ctag="Fat" pos="punctuation"
+        type="exclamationmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="44">
+      <token id="t44.1" form="By" lemma="by" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t44.2" form="thinking" lemma="think" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t44.3" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t44.4" form="questioning" lemma="question" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t44.5" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t44.6" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t44.7" form="can" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t44.8" form="understand" lemma="understand" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t44.9" form="more" lemma="more" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t44.10" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t44.11" form="maybe" lemma="maybe" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t44.12" form="prevent" lemma="prevent" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t44.13" form="problems" lemma="problem" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t44.14" form="caused" lemma="cause" tag="VBN" ctag="VBN" pos="verb"
+        vform="participle"> </token>
+      <token id="t44.15" form="by" lemma="by" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t44.16" form="misunderstanding" lemma="misunderstanding" tag="NN" ctag="NN"
+        pos="noun" type="common" num="singular"> </token>
+      <token id="t44.17" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="45">
+      <token id="t45.1" form="But" lemma="but" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t45.2" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t45.3" form="can" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t45.4" form="also" lemma="also" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t45.5" form="cause" lemma="cause" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t45.6" form="problems" lemma="problem" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t45.7" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t45.8" form="conflict" lemma="conflict" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t45.9" form="when" lemma="when" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t45.10" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t45.11" form="don" lemma="don" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t45.12" form="’" lemma="’" tag="Frc" ctag="Frc" pos="punctuation" type="quotation"
+        punctenclose="close"> </token>
+      <token id="t45.13" form="t" lemma="t" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t45.14" form="agree" lemma="agree" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t45.15" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="46">
+      <token id="t46.1" form="When" lemma="when" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t46.2" form="one" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t46.3" form="group" lemma="group" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t46.4" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t46.5" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t46.6" form="choose" lemma="choose" tag="VBP" ctag="VBP" pos="verb"
+        vform="personal"> </token>
+      <token id="t46.7" form="one" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t46.8" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t46.9" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t46.10" form="believe" lemma="believe" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t46.11" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t46.12" form="another" lemma="another" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t46.13" form="group" lemma="group" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t46.14" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t46.15" form="people" lemma="people" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t46.16" form="choose" lemma="choose" tag="VBP" ctag="VBP" pos="verb"
+        vform="personal"> </token>
+      <token id="t46.17" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t46.18" form="different" lemma="different" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t46.19" form="philosophy" lemma="philosophy" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t46.20" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t46.21" form="when" lemma="when" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t46.22" form="they" lemma="they" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t46.23" form="need" lemma="need" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t46.24" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t46.25" form="think" lemma="think" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t46.26" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t46.27" form="make" lemma="make" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t46.28" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t46.29" form="decision" lemma="decision" tag="NN" ctag="NN" pos="noun"
+        type="common" num="singular"> </token>
+      <token id="t46.30" form="together" lemma="together" tag="RB" ctag="RB" pos="adverb"
+        type="general"> </token>
+      <token id="t46.31" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t46.32" form="they" lemma="they" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t46.33" form="start" lemma="start" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t46.34" form="trying" lemma="try" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t46.35" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to"> </token>
+      <token id="t46.36" form="change" lemma="change" tag="VB" ctag="VB" pos="verb"
+        vform="infinitive"> </token>
+      <token id="t46.37" form="each" lemma="each" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t46.38" form="other" lemma="other" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t46.39" form="instead_of" lemma="instead_of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t46.40" form="working" lemma="work" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t46.41" form="together" lemma="together" tag="RB" ctag="RB" pos="adverb"
+        type="general"> </token>
+      <token id="t46.42" form="on" lemma="on" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t46.43" form="bigger" lemma="big" tag="JJR" ctag="JJR" pos="adjective"
+        degree="comparative"> </token>
+      <token id="t46.44" form="ideas" lemma="idea" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t46.45" form="about" lemma="about" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t46.46" form="life" lemma="life" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t46.47" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period"
+      > </token>
+    </sentence>
+    <sentence id="47">
+      <token id="t47.1" form="So" lemma="so" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t47.2" form="when" lemma="when" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t47.3" form="you" lemma="you" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t47.4" form="have" lemma="have" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t47.5" form="some" lemma="some" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t47.6" form="spare" lemma="spare" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t47.7" form="time" lemma="time" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t47.8" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t47.9" form="ask" lemma="ask" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t47.10" form="yourself" lemma="yourself" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t47.11" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t47.12" form="following" lemma="follow" tag="VBG" ctag="VBG" pos="verb"
+        vform="gerund"> </token>
+      <token id="t47.13" form="philosophical" lemma="philosophical" tag="JJ" ctag="JJ"
+        pos="adjective"> </token>
+      <token id="t47.14" form="questions" lemma="question" tag="NNS" ctag="NNS" pos="noun"
+        type="common" num="plural"> </token>
+      <token id="t47.15" form=":" lemma=":" tag="Fd" ctag="Fd" pos="punctuation" type="colon"> </token>
+      <token id="t47.16" form="Does" lemma="do" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t47.17" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t47.18" form="world" lemma="world" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t47.19" form="own" lemma="own" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t47.20" form="us" lemma="us" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t47.21" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t47.22" form="do" lemma="do" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t47.23" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t47.24" form="own" lemma="own" tag="VBP" ctag="VBP" pos="verb" vform="personal"> </token>
+      <token id="t47.25" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t47.26" form="world" lemma="world" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t47.27" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="48">
+      <token id="t48.1" form="Which" lemma="which" tag="WDT" ctag="WDT" pos="determiner"
+        type="interrogative"> </token>
+      <token id="t48.2" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t48.3" form="more" lemma="more" tag="RB" ctag="RB" pos="adverb" type="general"> </token>
+      <token id="t48.4" form="important" lemma="important" tag="JJ" ctag="JJ" pos="adjective"> </token>
+      <token id="t48.5" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t48.6" form="humans" lemma="human" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t48.7" form="or" lemma="or" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t48.8" form="stars" lemma="star" tag="NNS" ctag="NNS" pos="noun" type="common"
+        num="plural"> </token>
+      <token id="t48.9" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="49">
+      <token id="t49.1" form="If" lemma="if" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t49.2" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t49.3" form="tree" lemma="tree" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t49.4" form="falls" lemma="fall" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t49.5" form="where" lemma="where" tag="WRB" ctag="WRB" pos="adverb"
+        type="interrogative"> </token>
+      <token id="t49.6" form="nobody" lemma="nobody" tag="PRP" ctag="PRP" pos="pronoun"
+        type="personal"> </token>
+      <token id="t49.7" form="can" lemma="can" tag="MD" ctag="MD" pos="verb" type="modal"> </token>
+      <token id="t49.8" form="hear" lemma="hear" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t49.9" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t49.10" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma"> </token>
+      <token id="t49.11" form="does" lemma="do" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t49.12" form="it" lemma="it" tag="PRP" ctag="PRP" pos="pronoun" type="personal"> </token>
+      <token id="t49.13" form="make" lemma="make" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t49.14" form="a" lemma="a" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t49.15" form="sound" lemma="sound" tag="VB" ctag="VB" pos="verb" vform="infinitive"> </token>
+      <token id="t49.16" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+    <sentence id="50">
+      <token id="t50.1" form="And" lemma="and" tag="CC" ctag="CC" pos="conjunction"
+        type="coordinating"> </token>
+      <token id="t50.2" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t50.3" form="Zen_Buddhist" lemma="zen_buddhist" tag="NP" ctag="NP" pos="noun"
+        type="proper"> </token>
+      <token id="t50.4" form="riddle" lemma="riddle" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t50.5" form=":" lemma=":" tag="Fd" ctag="Fd" pos="punctuation" type="colon"> </token>
+      <token id="t50.6" form="What" lemma="what" tag="WP" ctag="WP" pos="pronoun"
+        type="interrogative"> </token>
+      <token id="t50.7" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal"
+        person="3"> </token>
+      <token id="t50.8" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner"> </token>
+      <token id="t50.9" form="sound" lemma="sound" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t50.10" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition"> </token>
+      <token id="t50.11" form="one" lemma="1" tag="Z" ctag="Z" pos="number"> </token>
+      <token id="t50.12" form="hand" lemma="hand" tag="NN" ctag="NN" pos="noun" type="common"
+        num="singular"> </token>
+      <token id="t50.13" form="clapping" lemma="clap" tag="VBG" ctag="VBG" pos="verb" vform="gerund"> </token>
+      <token id="t50.14" form="?" lemma="?" tag="Fit" ctag="Fit" pos="punctuation"
+        type="questionmark" punctenclose="close"> </token>
+    </sentence>
+  </contenido>
+</corpus>

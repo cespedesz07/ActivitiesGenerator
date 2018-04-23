@@ -1,0 +1,13 @@
+
+<h2 mat-dialog-title>Delete Sequence</h2>
+
+<mat-dialog-content>
+  <h6>Are you sure to remove the sequence and all linked activities?: 
+    <br>{{secuenciaActividades.nombre}}<br>
+  </h6>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">No</button>
+    <button class="mat-raised-button mat-primary" (click)="deleteSequence()">Yes</button>
+</mat-dialog-actions>

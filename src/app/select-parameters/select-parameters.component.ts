@@ -8,6 +8,7 @@ import { Actividad } from '../model/Actividad';
 import { SecuenciaActividades } from '../model/SecuenciaActividades';
 import { Texto } from '../model/Texto';
 import { element } from 'protractor';
+import { Nocion } from '../model/Nocion';
 
 @Component({
   selector: 'select-parameters',
@@ -19,8 +20,10 @@ export class SelectParametersComponent implements OnInit {
 
   // Attributes
   levels: Observable< Nivel[] >;
-  activities: Observable< Actividad[] >;
+  notions: Nocion[];
   texts: Observable< Texto[] >;
+  activities: Observable< Actividad[] >;
+  
 
   secuenciaActividad: SecuenciaActividades;
   selectedActivities: number[] = [];
@@ -42,42 +45,53 @@ export class SelectParametersComponent implements OnInit {
     this.texts = this.parametersService.getTexts( this.secuenciaActividad.idNivel );
   }
 
+  getNotions(): void {
+    this.levels.subscribe( levelsArray => {
+      if ( levelsArray.length > 0 ) {
+        this.notions = levelsArray.filter( levelItem => {
+          return levelItem.id === this.secuenciaActividad.idNivel;
+        })[0].nociones;
+      }
+    });
+  }
+
   ngOnInit() {
     this.getLevelsParams();
     this.getActivities();
   }
 
-  checkActivity( activity: Actividad ) {
-    if ( this.isActivitySelected(activity) ) {
-      this.selectedActivities.splice( this.selectedActivities.indexOf(activity.id), 1 )
-    }
-    else{
-      this.selectedActivities.push( activity.id );
-    }
-  }
+  // TODO: SELECCION DE ACTIVIDADES PARA GENERAR: Deprecated
+  // checkActivity( activity: Actividad ) {
+  //   if ( this.isActivitySelected(activity) ) {
+  //     this.selectedActivities.splice( this.selectedActivities.indexOf(activity.id), 1 )
+  //   }
+  //   else{
+  //     this.selectedActivities.push( activity.id );
+  //   }
+  // }
 
-  isActivitySelected( activity: Actividad ) {
-    return this.selectedActivities.indexOf( activity.id ) !== -1;
-  }
+  // isActivitySelected( activity: Actividad ) {
+  //   return this.selectedActivities.indexOf( activity.id ) !== -1;
+  // }
 
-  getActivitiesObjects( activitiesLoaded: Actividad[] ) {
-    let activitiesToSave: Actividad[] = [];
-    this.selectedActivities.forEach( index => {
-      let activityToSave = activitiesLoaded.filter( (element) => {
-        if (element.id === index) {
-          return element;
-        }
-      });
-      activitiesToSave.push( activityToSave[0] );
-    });
-    return activitiesToSave;
-  }
+  // getActivitiesObjects( activitiesLoaded: Actividad[] ) {
+  //   let activitiesToSave: Actividad[] = [];
+  //   this.selectedActivities.forEach( index => {
+  //     let activityToSave = activitiesLoaded.filter( (element) => {
+  //       if (element.id === index) {
+  //         return element;
+  //       }
+  //     });
+  //     activitiesToSave.push( activityToSave[0] );
+  //   });
+  //   return activitiesToSave;
+  // }
 
   saveSequence() {
     this.secuenciaActividad.idUsuarioRealizador = 1;
     this.secuenciaActividad.fechaGeneracion = new Date().getTime().toString(); 
     this.activities.subscribe( activitiesLoaded => { 
-      this.secuenciaActividad.actividades = this.getActivitiesObjects( activitiesLoaded );
+      this.secuenciaActividad.actividades = activitiesLoaded;
       this.parametersService.saveSequence( this.secuenciaActividad );
     });
   }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from './modules/material/material.module';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 import { AngularFireModule } from 'angularfire2';
@@ -22,6 +22,7 @@ import { ActivityGenerationService } from './services/activity-generation/activi
 import { LocationActivityComponent } from './activities-viewer/location-activity/location-activity.component';
 import { SystematizationActivityComponent } from './activities-viewer/systematization-activity/systematization-activity.component';
 import { SafeHtmlPipe } from './modules/pipes/safe-html.pipe';
+import { ResultsModalComponent } from './activities-viewer/results-modal/results-modal.component';
 
 
 // Initialize Firebase
@@ -44,7 +45,8 @@ export const config = {
     ActivitiesViewerComponent,
     LocationActivityComponent,
     SystematizationActivityComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    ResultsModalComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +54,7 @@ export const config = {
     HttpModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
@@ -64,6 +67,6 @@ export const config = {
     AngularFireDatabase
   ],
   bootstrap: [AppComponent],
-  entryComponents: [DeleteSequenceModalComponent]
+  entryComponents: [DeleteSequenceModalComponent, ResultsModalComponent]
 })
 export class AppModule { }

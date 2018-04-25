@@ -1,43 +1,40 @@
 <div class="flex-container">
-  <form>
-    <mat-form-field color="primary">
+  <form [formGroup]="sequenceCreationFromGroup" (ngSubmit)="saveSequence()">
+    <mat-form-field>
       <div class="input field">
-        <input matInput placeholder="Secuence Name" 
-          [(ngModel)]="secuenciaActividad.nombre" 
-          name="secuenciaActividad.nombre" required/>
+        <input matInput placeholder="Secuence Name" [(ngModel)]="secuenciaActividad.nombre" 
+          formControlName="nombre"/>
       </div>
     </mat-form-field>
 
-    <mat-form-field color="primary">
+    <mat-form-field>
       <mat-select placeholder="Select Level: " 
         (change)="getTexts(); getNotions()" 
-        [(ngModel)]="secuenciaActividad.idNivel" name="secuenciaActividad.idNivel" required>
-        <mat-option *ngFor="let level of levels | async" 
-          [value]="level.id" >
+        [(ngModel)]="secuenciaActividad.idNivel" formControlName="nivel">
+        <mat-option *ngFor="let level of levels | async" [value]="level.id" >
           {{ level.nombre }}
         </mat-option>
       </mat-select>
     </mat-form-field>
 
-    <mat-form-field color="primary">
+    <mat-form-field>
       <mat-select placeholder="Select Notion: "
-        [(ngModel)]="secuenciaActividad.idNocion" name="secuenciaActividad.idNocion" required>
-        <mat-option *ngFor="let notion of notions" 
-          [value]="notion.id" >
+        [(ngModel)]="secuenciaActividad.idNocion" formControlName="nocion">
+        <mat-option *ngFor="let notion of notions" [value]="notion.id" [disabled]="!notion.disponible" >
           {{ notion.nombre }}
         </mat-option>
       </mat-select>
+      <mat-hint>Some notions could be unavailable</mat-hint>
     </mat-form-field>
 
-    <mat-form-field color="primary">
+    <mat-form-field>
       <mat-select placeholder="Select Text: "
-        [(ngModel)]="secuenciaActividad.idTexto" name="secuenciaActividad.idTexto" required>
+        [(ngModel)]="secuenciaActividad.idTexto" formControlName="texto">
         <mat-option *ngFor="let text of texts | async" [value]="text.id" >
           {{ text.tituloDoc }} - {{ text.autor }}
         </mat-option>
       </mat-select>
     </mat-form-field>    
+    <button type="submit" mat-raised-button color="primary" [disabled]="sequenceCreationFromGroup.pristine">Save Sequence</button>
   </form>
-
-  <button type="submit" mat-raised-button color="primary" (click)="saveSequence()">Save Sequence</button>
 </div>

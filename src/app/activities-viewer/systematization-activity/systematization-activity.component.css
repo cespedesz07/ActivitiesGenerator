@@ -1,0 +1,52 @@
+.systematization-activity-container {
+  width: 98%;
+  margin: auto auto;
+}
+
+.html-text-container {
+  display: inline-block;
+  height: 100%;
+}
+
+.html-text {
+  height: 100%;
+  overflow: scroll;
+  padding: 18px;
+  background-color: white;
+  text-align: justify;
+}
+
+.categories-container {
+  padding: 18px;
+}
+
+.categories-box {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.word-to-click {
+  cursor: pointer;
+}
+
+.categories-box {
+  white-space: pre-wrap;
+}
+.actions-container {
+  float: right;
+}
+
+/* .word-input {
+  background-color: white; 
+  display: inline-block; 
+  width: 7%; 
+  border-radius: 2px;  
+}
+
+.word-input > input {
+  height: 1rem !important; 
+  padding: 0;
+} */

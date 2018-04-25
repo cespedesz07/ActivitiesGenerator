@@ -1,34 +1,4 @@
 <div class="location-activity-container">
-  <!-- <mat-horizontal-stepper linear #stepper="matHorizontalStepper">
-    <mat-step [stepControl]="level1FormGroup">
-      <form [formGroup]="level1FormGroup">
-
-        <div class="html-text-container">
-          <div [innerHTML]="taggedHTML | safeHtml"></div>
-        </div>
-
-        <div class="categories-container">
-        </div>
-          
-        <div>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-
-      </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-      <form [formGroup]="secondFormGroup">
-        <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-      </form>
-    </mat-step>
-  </mat-horizontal-stepper> -->
-  
-  
-  <!-- <div id="activityLoader"></div> -->
-
   <mat-grid-list cols="10" rowHeight="10:40">
     <mat-grid-tile colspan="7">      
       <div class="html-text-container">
@@ -39,11 +9,13 @@
     <mat-grid-tile colspan="3">
       <div class="categories-container">
         <span>You can see the clicked words here</span>
-        <div class="categories-box" ([ngModel])="selectedWords"></div>
+        <div class="categories-box">{{addedWords}}</div>
+        <button mat-raised-button color="primary" (click)="clearWords()" [disabled]="addedWords.length === 0">Clean Words</button>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
-  
-
-  
+  <div class="actions-container">
+    <button mat-button color="primary" (click)="validateResults()">Validate</button>
+    <button mat-raised-button color="primary" (click)="navigateToNextActivity()" [disabled]="!resultsOK">Next Activity</button>
+  </div>
 </div>

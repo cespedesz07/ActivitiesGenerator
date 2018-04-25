@@ -6,6 +6,7 @@ import { SecuenciaActividades } from '../../model/SecuenciaActividades';
 import { DataSource } from '@angular/cdk/table';
 import { tap } from 'rxjs/operators';
 import { Actividad } from '../../model/Actividad';
+import { Nocion } from '../../model/Nocion';
 
 @Injectable()
 export class ActivityGenerationService {
@@ -23,11 +24,15 @@ export class ActivityGenerationService {
   getXML( idTexto: number ): Observable<string> {
     let URL = URL_LIST.contenidoTexto.replace( "{0}", String(idTexto) );
     return this.http.get( URL, { responseType: 'text' })
-      .pipe( tap( retrievedXMLString => retrievedXMLString) )   
+      .pipe( tap( retrievedXMLString => retrievedXMLString) );
   }
 
-  getSequenceActivities( idSecuencia ): Observable<Actividad[]> {
-    return this.http.get<Actividad[]>( URL_LIST.actividadesOfSecuencia.replace( "{0}", String(idSecuencia) ) )
+  getSequenceActivities( idSecuencia: number ): Observable<Actividad[]> {
+    return this.http.get<Actividad[]>( URL_LIST.actividadesOfSecuencia.replace( "{0}", String(idSecuencia) ) );
+  }
+
+  getNotion( idNocion: number ): Observable<Nocion> {
+    return this.http.get<Nocion>( URL_LIST.nocionOne.replace( "{0}", String(idNocion) ) );
   }
 
 }

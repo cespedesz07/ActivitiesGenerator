@@ -50,3 +50,11 @@
   height: 1rem !important; 
   padding: 0;
 } */
+
+.custom-dropdown {
+  display: inline-flex;
+}
+
+.active {
+  background-color: aqua !important;
+}

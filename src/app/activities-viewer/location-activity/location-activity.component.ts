@@ -60,19 +60,22 @@ export class LocationActivityComponent implements OnInit {
   }
 
   generateActivity() {
-    let xmlDoc = this.parser.parseFromString( this.XML, "text/xml" );  
-    let sentences = xmlDoc.getElementsByTagName("sentence");
-    for ( let i = 0; i < sentences.length; i++ ) {
-      let tokens = sentences[i].getElementsByTagName("token")
-      for ( let j = 0; j < tokens.length; j++ ) {
-        if ( tokens[j].getAttribute("pos") === "adjective" || 
-             tokens[j].getAttribute("pos") === "adverb" ){
-          this.validWords.push( tokens[j].getAttribute('form').trim() );
+    this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
+      let xmlCtagsArray = retrievedNotion.xmlCtags.split(",");
+      console.log( xmlCtagsArray );
+      let xmlDoc = this.parser.parseFromString( this.XML, "text/xml" );  
+      let sentences = xmlDoc.getElementsByTagName("sentence");
+      for ( let i = 0; i < sentences.length; i++ ) {
+        let tokens = sentences[i].getElementsByTagName("token")
+        for ( let j = 0; j < tokens.length; j++ ) {
+          if ( xmlCtagsArray.includes( tokens[j].getAttribute("ctag") ) ) {
+            this.validWords.push( tokens[j].getAttribute('form').trim() );
+          }
+          this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;        
         }
-        this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;        
       }
-    }
-    console.log( this.validWords );
+      console.log( this.validWords );
+    })
   }
 
   ngOnInit() {

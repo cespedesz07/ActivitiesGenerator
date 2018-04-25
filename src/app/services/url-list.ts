@@ -8,7 +8,6 @@ export const URL_LIST = {
   //Actividad
   actividadAll: `${rootServer}/actividad/all/`,
   
-
   //SecuenciaActividades
   registrarSecuencia: `${rootServer}/secuencia/registrar/`,
   eliminarSecuencia: `${rootServer}/secuencia/{0}/eliminar/`,
@@ -17,5 +16,8 @@ export const URL_LIST = {
   actividadesOfSecuencia: `${rootServer}/secuencia/{0}/actividades`,
   
   //Texto
-  contenidoTexto: `${rootServer}/texto/{0}/contenido/`
+  contenidoTexto: `${rootServer}/texto/{0}/contenido/`,
+
+  //Nocion
+  nocionOne: `${rootServer}/nocion/{0}`,
 }

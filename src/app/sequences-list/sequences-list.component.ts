@@ -11,8 +11,8 @@ import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'sequences-list',
-  templateUrl: './Sequences-list.component.html',
-  styleUrls: ['./Sequences-list.component.css']
+  templateUrl: './sequences-list.component.html',
+  styleUrls: ['./sequences-list.component.css']
 })
 export class SequencesListComponent implements OnInit {
 

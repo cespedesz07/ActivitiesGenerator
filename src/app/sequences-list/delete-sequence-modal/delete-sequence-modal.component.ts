@@ -10,7 +10,7 @@ import { SecuenciaActividades } from '../../model/SecuenciaActividades';
 })
 export class DeleteSequenceModalComponent implements OnInit {
 
-  private secuenciaActividades: SecuenciaActividades;
+  secuenciaActividades: SecuenciaActividades;
 
   constructor( private dialogRef: MatDialogRef<DeleteSequenceModalComponent>, 
                @Inject(MAT_DIALOG_DATA) private data: { secuenciaActividades: SecuenciaActividades }, 

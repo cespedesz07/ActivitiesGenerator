@@ -18,7 +18,7 @@ export class SystematizationActivityComponent implements OnInit {
 
   private difficultLevels: number[];
   private parser: DOMParser;
-  private taggedHTML: string;
+  taggedHTML: string;
   private XML: string;
   private idSecuencia: number;
   private secuenciaActividades: SecuenciaActividades;

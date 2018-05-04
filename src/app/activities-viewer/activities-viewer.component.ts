@@ -15,7 +15,7 @@ export class ActivitiesViewerComponent implements OnInit {
   
   //Objeto SecuenciaActividades que recibe desde la lista
   private idSecuencia: number;
-  private activitiesSequence: Observable<Actividad[]>;
+  activitiesSequence: Observable<Actividad[]>;
   
 
   constructor( private activityGenerationService: ActivityGenerationService, private route: ActivatedRoute,

@@ -18,15 +18,15 @@ export class SequencesListComponent implements OnInit {
 
 
   // Attributes
-  private sequencesList: Observable< SecuenciaActividades[] >;
-  private displayedColumns: String[] = [
+  sequencesList: Observable< SecuenciaActividades[] >;
+  displayedColumns: String[] = [
     "nombre", "fechaGeneracion", "idUsuarioRealizador", 
     "idNivel", "idNocion", "actions"
   ]
 
-  private areSequencesLoaded: boolean;
-  private dialogConfig: MatDialogConfig;
-  private navigationExtras: NavigationExtras;
+  areSequencesLoaded: boolean;
+  dialogConfig: MatDialogConfig;
+  navigationExtras: NavigationExtras;
 
 
   // Methods

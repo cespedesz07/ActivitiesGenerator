@@ -22,14 +22,14 @@ export class LocationActivityComponent implements OnInit {
 
   private difficultLevels: number[];
   private parser: DOMParser;
-  private taggedHTML: string;
+  taggedHTML: string;
   private XML: string;
   private idSecuencia: number;
   private secuenciaActividades: SecuenciaActividades;
   private validWords: string[];
   private selectedWords: BehaviorSubject<string[]>;
-  private addedWords: string;
-  private resultsOK: boolean;
+  addedWords: string;
+  resultsOK: boolean;
 
   constructor( private activityGenerationService: ActivityGenerationService, private route: ActivatedRoute, 
     private router: Router, public snackBar: MatSnackBar, public dialog: MatDialog) {

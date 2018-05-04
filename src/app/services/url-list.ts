@@ -1,4 +1,6 @@
-const rootServer = "http://localhost:8080";
+import {environment} from '../../environments/environment'
+
+const rootServer = environment.apiURL;
 
 export const URL_LIST = {
   //Nivel

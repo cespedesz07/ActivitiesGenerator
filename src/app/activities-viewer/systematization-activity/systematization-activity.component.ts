@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { ActivityGenerationService } from '../../services/activity-generation/activity-generation.service';
 import { MatDialog, MatSnackBar } from '@angular/material';
 import { SecuenciaActividades } from '../../model/SecuenciaActividades';
+import { ResultsModalComponent } from '../results-modal/results-modal.component';
 
 @Component({
   selector: 'app-systematization-activity',
@@ -37,7 +38,7 @@ export class SystematizationActivityComponent implements OnInit {
     this.taggedHTML = "";
     this.XML = "";
     this.validWords = [];
-    //this.selectedWords = new BehaviorSubject<string[]>([]);
+    // this.selectedWords = new BehaviorSubject<string[]>([]);
     this.resultsOK = false;
     this.xmlCtagsArray = [];
     this.indexesArray = [];

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivityGenerationService } from '../services/activity-generation/activity-generation.service';
 import { SecuenciaActividades } from '../model/SecuenciaActividades';
 import { Route, Router, ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/Observable'
+import { Observable } from 'rxjs/Observable';
 import { Actividad } from '../model/Actividad';
 
 
@@ -12,11 +12,11 @@ import { Actividad } from '../model/Actividad';
   styleUrls: ['./activities-viewer.component.css']
 })
 export class ActivitiesViewerComponent implements OnInit {
-  
-  //Objeto SecuenciaActividades que recibe desde la lista
+
+  // Objeto SecuenciaActividades que recibe desde la lista
   private idSecuencia: number;
   activitiesSequence: Observable<Actividad[]>;
-  
+
 
   constructor( private activityGenerationService: ActivityGenerationService, private route: ActivatedRoute,
     private router: Router ) {
@@ -32,10 +32,13 @@ export class ActivitiesViewerComponent implements OnInit {
   openActivity( idActividad: number ) {
     switch ( idActividad ) {
       case 1:
-        this.router.navigate(['activities-viewer', this.idSecuencia, 'location'])
+        this.router.navigate(['activities-viewer', this.idSecuencia, 'location']);
         break;
       case 2:
-        this.router.navigate(['activities-viewer', this.idSecuencia, 'systematization'])
+        this.router.navigate(['activities-viewer', this.idSecuencia, 'systematization']);
+        break;
+      case 3:
+        this.router.navigate(['activities-viewer', this.idSecuencia, 'lectures']);
         break;
       default:
         break;

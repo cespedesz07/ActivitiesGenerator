@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation, ElementRef, AfterViewInit, ViewChild, OnChanges, ChangeDetectorRef, ApplicationRef } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef, AfterViewInit, ViewChild,
+  OnChanges, ChangeDetectorRef, ApplicationRef } from '@angular/core';
 import { ActivitiesViewerComponent } from '../activities-viewer.component';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ActivityGenerationService } from '../../services/activity-generation/activity-generation.service';
@@ -61,21 +62,20 @@ export class LocationActivityComponent implements OnInit {
 
   generateActivity() {
     this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
-      let xmlCtagsArray = retrievedNotion.xmlCtags.split(",");
-      console.log( xmlCtagsArray );
-      let xmlDoc = this.parser.parseFromString( this.XML, "text/xml" );  
-      let sentences = xmlDoc.getElementsByTagName("sentence");
+      const xmlCtagsArray = retrievedNotion.tagsNociones.map( tagsObject => tagsObject.tag );
+      const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
+      const sentences = xmlDoc.getElementsByTagName('sentence');
       for ( let i = 0; i < sentences.length; i++ ) {
-        let tokens = sentences[i].getElementsByTagName("token")
+        const tokens = sentences[i].getElementsByTagName('token');
         for ( let j = 0; j < tokens.length; j++ ) {
-          if ( xmlCtagsArray.includes( tokens[j].getAttribute("ctag") ) ) {
+          if ( xmlCtagsArray.includes( tokens[j].getAttribute('ctag') ) ) {
             this.validWords.push( tokens[j].getAttribute('form').trim() );
           }
           this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;        
         }
       }
       console.log( this.validWords );
-    })
+    });
   }
 
   ngOnInit() {
@@ -119,7 +119,7 @@ export class LocationActivityComponent implements OnInit {
   }
 
   navigateToNextActivity() {
-    this.router.navigate(['activities-viewer', this.idSecuencia, 'systematization'])
+    this.router.navigate(['activities-viewer', this.idSecuencia, 'systematization']);
   }
- 
+
 }

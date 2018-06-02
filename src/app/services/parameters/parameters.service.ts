@@ -5,7 +5,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { URL_LIST } from '../url-list'
+import { URL_LIST } from '../url-list';
 
 import { Nivel } from '../../model/Nivel';
 import { Actividad } from '../../model/Actividad';
@@ -19,12 +19,12 @@ export class ParametersService {
   private headers: HttpHeaders;
 
   constructor( private http: HttpClient /*private db: AngularFireDatabase*/ ) {
-    this.headers = new HttpHeaders().set('Content-Type','application/json');
+    this.headers = new HttpHeaders().set('Content-Type', 'application/json');
   }
 
   getLevelsParams(): Observable< Nivel[] > {
     // return this.db.list('level').valueChanges();
-    return this.http.get<Nivel[]>( URL_LIST.nivelAll )
+    return this.http.get<Nivel[]>( URL_LIST.nivelAll );
   }
 
   getActivities(): Observable< Actividad[] > {
@@ -36,8 +36,7 @@ export class ParametersService {
   }
 
   saveSequence( secuenciaActividades: SecuenciaActividades ) {
-    return this.http.post( URL_LIST.registrarSecuencia, secuenciaActividades, {headers: this.headers} )
-      .subscribe( response => console.log(response) );
+    return this.http.post( URL_LIST.registrarSecuencia, secuenciaActividades, {headers: this.headers} );
   }
 
 }

@@ -22,4 +22,7 @@ export const URL_LIST = {
 
   //Nocion
   nocionOne: `${rootServer}/nocion/{0}`,
+
+  //Lectura
+  lecturaByNocion: `${rootServer}/nocion/{0}/lecturas`,
 }

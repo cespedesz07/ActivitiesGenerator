@@ -5,6 +5,7 @@ import { SequencesListComponent } from '../../sequences-list/sequences-list.comp
 import { ActivitiesViewerComponent } from '../../activities-viewer/activities-viewer.component';
 import { LocationActivityComponent } from '../../activities-viewer/location-activity/location-activity.component';
 import { SystematizationActivityComponent } from '../../activities-viewer/systematization-activity/systematization-activity.component';
+import { LecturesActivityComponent } from '../../activities-viewer/lectures-activity/lectures-activity.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/sequence-creation', pathMatch: 'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'sequences-list', component: SequencesListComponent },
   {path: 'activities-viewer/:id', component: ActivitiesViewerComponent },
   {path: 'activities-viewer/:id/location', component: LocationActivityComponent },
-  {path: 'activities-viewer/:id/systematization', component: SystematizationActivityComponent }
+  {path: 'activities-viewer/:id/systematization', component: SystematizationActivityComponent },
+  {path: 'activities-viewer/:id/lectures', component: LecturesActivityComponent }
 ];
 
 @NgModule({

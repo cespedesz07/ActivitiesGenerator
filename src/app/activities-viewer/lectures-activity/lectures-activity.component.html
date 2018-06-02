@@ -1,0 +1,21 @@
+<div class="systematization-activity-container">
+  <div class="flex-container">
+    <form [formGroup]="downloadLectureFromGroup" (ngSubmit)="downloadLecture()">
+      <span>You can download any PDF to start lecture: </span>
+
+      <mat-form-field>
+        <mat-select placeholder="Select Lecture to download: "  
+          [(ngModel)]="selectedLecture" 
+          formControlName="lectura">
+          <mat-option *ngFor="let lecture of lectures | async" [value]="lecture.id" >
+            {{ lecture.tituloDoc }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <button type="submit" mat-raised-button color="primary" [disabled]="downloadLectureFromGroup.pristine">Download</button>
+    </form>
+  </div>
+  
+</div>
+

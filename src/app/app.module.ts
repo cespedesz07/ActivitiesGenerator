@@ -16,13 +16,16 @@ import { DeleteSequenceModalComponent } from './sequences-list/delete-sequence-m
 
 import { ParametersService } from './services/parameters/parameters.service';
 import { SequenceService } from './services/sequence/sequence.service';
+import { ActivityGenerationService } from './services/activity-generation/activity-generation.service';
+import { LecturesService } from './services/lectures/lectures.service';
+
 import { AngularFireDatabase } from 'angularfire2/database';
 import { ActivitiesViewerComponent } from './activities-viewer/activities-viewer.component';
-import { ActivityGenerationService } from './services/activity-generation/activity-generation.service';
 import { LocationActivityComponent } from './activities-viewer/location-activity/location-activity.component';
 import { SystematizationActivityComponent } from './activities-viewer/systematization-activity/systematization-activity.component';
 import { SafeHtmlPipe } from './modules/pipes/safe-html.pipe';
 import { ResultsModalComponent } from './activities-viewer/results-modal/results-modal.component';
+import { LecturesActivityComponent } from './activities-viewer/lectures-activity/lectures-activity.component';
 
 
 // Initialize Firebase
@@ -46,7 +49,8 @@ export const config = {
     LocationActivityComponent,
     SystematizationActivityComponent,
     SafeHtmlPipe,
-    ResultsModalComponent
+    ResultsModalComponent,
+    LecturesActivityComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +68,7 @@ export const config = {
     ParametersService,
     SequenceService,
     ActivityGenerationService,
+    LecturesService,
     AngularFireDatabase
   ],
   bootstrap: [AppComponent],

@@ -27,7 +27,6 @@ export class SelectParametersComponent implements OnInit {
   notions: Nocion[];
   texts: Observable< Texto[] >;
   activities: Observable< Actividad[] >;
-  
 
   secuenciaActividad: SecuenciaActividades;
   selectedActivities: number[] = [];
@@ -81,7 +80,7 @@ export class SelectParametersComponent implements OnInit {
     }
     else {
       this.snackBar.open("Please fill in all required fields", "Close");
-    }    
+    }
   }
 
 }

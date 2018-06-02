@@ -1,0 +1,8 @@
+.pdf-container {
+  display: block;
+}
+
+textarea {
+  background-color: white;
+  resize: vertical;
+}

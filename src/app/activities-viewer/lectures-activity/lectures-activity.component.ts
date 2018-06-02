@@ -15,8 +15,11 @@ import { SecuenciaActividades } from '../../model/SecuenciaActividades';
 })
 export class LecturesActivityComponent implements OnInit {
 
-  downloadLectureFromGroup: FormGroup;
+  sendTextFormGroup: FormGroup;
   selectedLecture: string;
+  studentText: string;
+  professorsEmail: string;
+
   lectures: Observable<Lectura[]>;
 
   private idSecuencia: number;
@@ -24,12 +27,13 @@ export class LecturesActivityComponent implements OnInit {
 
   constructor( private formBuilder: FormBuilder, private route: ActivatedRoute, public snackBar: MatSnackBar,
     private lecturesService: LecturesService, private activityGenerationService: ActivityGenerationService ) {
-    this.downloadLectureFromGroup = this.formBuilder.group({
-      'lectura': new FormControl('', [Validators.required]),
-    });
-    this.route.params.subscribe( params => {
-      this.idSecuencia = params.id;
-    });
+      this.sendTextFormGroup = this.formBuilder.group({
+        'textoEstudiante': new FormControl('', [Validators.required]),
+        'emailProfesor': new FormControl('', [Validators.required])
+      });
+      this.route.params.subscribe( params => {
+        this.idSecuencia = params.id;
+      });
   }
 
   ngOnInit() {
@@ -39,17 +43,9 @@ export class LecturesActivityComponent implements OnInit {
   getLecturesByNotion() {
     this.activityGenerationService.getSequence( this.idSecuencia ).subscribe( (secuenciaActividades) => {
       this.secuenciaActividades = secuenciaActividades;
+      console.log( this.secuenciaActividades );
       this.lectures = this.lecturesService.getLecturesByNotion( this.secuenciaActividades.idNocion );
     });
-  }
-
-  downloadLecture() {
-    if ( this.downloadLectureFromGroup.valid ) {
-
-    }
-    else {
-      this.snackBar.open('Please fill in all required fields', 'Close');
-    }
   }
 
 }

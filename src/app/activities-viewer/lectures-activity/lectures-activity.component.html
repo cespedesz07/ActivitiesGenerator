@@ -1,21 +1,39 @@
 <div class="systematization-activity-container">
-  <div class="flex-container">
-    <form [formGroup]="downloadLectureFromGroup" (ngSubmit)="downloadLecture()">
-      <span>You can download any PDF to start lecture: </span>
-
-      <mat-form-field>
-        <mat-select placeholder="Select Lecture to download: "  
-          [(ngModel)]="selectedLecture" 
-          formControlName="lectura">
-          <mat-option *ngFor="let lecture of lectures | async" [value]="lecture.id" >
-            {{ lecture.tituloDoc }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
   
-      <button type="submit" mat-raised-button color="primary" [disabled]="downloadLectureFromGroup.pristine">Download</button>
-    </form>
-  </div>
+    <mat-grid-list cols="2" rowHeight="2:1">
+
+      <mat-grid-tile>
+        <span>Select the PDF lecture to use for the text: </span>    
+        <mat-form-field>
+          <mat-select placeholder="Select the lecture used for get the inspiration to write:"  
+            [(ngModel)]="selectedLecture">
+            <mat-option *ngFor="let lecture of lectures | async" [value]="lecture.id" >
+              {{ lecture.tituloDoc }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <pdf-viewer class=pdf-container 
+          [src]="pdfSrc" 
+          [render-text]="true">
+        </pdf-viewer>
+      </mat-grid-tile>
+          
+      <mat-grid-tile>
+        <form [formGroup]="sendTextFormGroup" (ngSubmit)="sendTextToProfessor()">
+          <textarea placeholder="Insert the text..."
+            [(ngModel)]="studentText"
+            formControlName="textoEstudiante">
+          </textarea>          
+          <input matInput 
+          type="email"
+          placeholder="Type the professors' email:" 
+          [(ngModel)]="professorsEmail" 
+          formControlName="emailProfesor"/>
+          <button type="submit" mat-raised-button color="primary" [disabled]="sendTextFormGroup.pristine">Send Text</button>
+        </form>
+      </mat-grid-tile>
+
+    </mat-grid-list>
   
 </div>
 

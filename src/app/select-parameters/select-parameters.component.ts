@@ -70,10 +70,10 @@ export class SelectParametersComponent implements OnInit {
   }
 
   saveSequence() {
-    if ( this.sequenceCreationFromGroup.valid ){
+    if ( this.sequenceCreationFromGroup.valid ) {
       this.secuenciaActividad.idUsuarioRealizador = 1;
-      this.secuenciaActividad.fechaGeneracion = new Date().getTime().toString(); 
-      this.activities.subscribe( activitiesLoaded => { 
+      this.secuenciaActividad.fechaGeneracion = new Date().getTime().toString();
+      this.activities.subscribe( activitiesLoaded => {
         this.secuenciaActividad.actividades = activitiesLoaded;
         this.parametersService.saveSequence( this.secuenciaActividad );
       });

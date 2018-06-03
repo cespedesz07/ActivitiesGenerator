@@ -36,7 +36,9 @@ export class ParametersService {
   }
 
   saveSequence( secuenciaActividades: SecuenciaActividades ) {
-    return this.http.post( URL_LIST.registrarSecuencia, secuenciaActividades, {headers: this.headers} );
+    return this.http.post( URL_LIST.registrarSecuencia, secuenciaActividades, {headers: this.headers} ).subscribe( response => {
+      console.log( response );
+    });
   }
 
 }

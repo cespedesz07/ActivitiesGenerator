@@ -1,12 +1,9 @@
-<div class="flex-container">
+<div class="flex-container container">
   <form [formGroup]="sequenceCreationFromGroup" (ngSubmit)="saveSequence()">
     <mat-form-field>
-      <div class="input field">
-        <input matInput placeholder="Secuence Name" [(ngModel)]="secuenciaActividad.nombre" 
-          formControlName="nombre"/>
-      </div>
+      <input matInput placeholder="Secuence Name" [(ngModel)]="secuenciaActividad.nombre" 
+        formControlName="nombre"/>
     </mat-form-field>
-
     <mat-form-field>
       <mat-select placeholder="Select Level: " 
         (change)="getTexts(); getNotions()" 

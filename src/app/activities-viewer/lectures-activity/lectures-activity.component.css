@@ -1,5 +1,7 @@
 .pdf-container {
   display: block;
+  height: 600px;
+  overflow-y: scroll;
 }
 
 textarea {

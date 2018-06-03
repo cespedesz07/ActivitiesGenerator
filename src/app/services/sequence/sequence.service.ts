@@ -20,7 +20,9 @@ export class SequenceService {
   }
 
   deleteSequence( idSecuencia: number ) {
-    return this.http.delete( URL_LIST.eliminarSecuencia.replace("{0}", String(idSecuencia)) );
+    return this.http.delete( URL_LIST.eliminarSecuencia.replace("{0}", String(idSecuencia)) ).subscribe( response => {
+      console.log( response );
+    });
   }
 
 }

@@ -7,6 +7,7 @@ import { LecturesService } from '../../services/lectures/lectures.service';
 import { ActivatedRoute } from '@angular/router';
 import { ActivityGenerationService } from '../../services/activity-generation/activity-generation.service';
 import { SecuenciaActividades } from '../../model/SecuenciaActividades';
+import { IEstructuraEmail } from '../../model/IEstructuraEmail';
 
 @Component({
   selector: 'app-lectures-activity',
@@ -20,13 +21,16 @@ export class LecturesActivityComponent implements OnInit {
   studentText: string;
   professorsEmail: string;
 
-  lectures: Observable<Lectura[]>;
+  lecturas: Observable<Lectura[]>;
+
+  rutaLectura: String;
 
   private idSecuencia: number;
   private secuenciaActividades: SecuenciaActividades;
 
   constructor( private formBuilder: FormBuilder, private route: ActivatedRoute, public snackBar: MatSnackBar,
     private lecturesService: LecturesService, private activityGenerationService: ActivityGenerationService ) {
+      this.rutaLectura = null;
       this.sendTextFormGroup = this.formBuilder.group({
         'textoEstudiante': new FormControl('', [Validators.required]),
         'emailProfesor': new FormControl('', [Validators.required])
@@ -43,9 +47,20 @@ export class LecturesActivityComponent implements OnInit {
   getLecturesByNotion() {
     this.activityGenerationService.getSequence( this.idSecuencia ).subscribe( (secuenciaActividades) => {
       this.secuenciaActividades = secuenciaActividades;
-      console.log( this.secuenciaActividades );
-      this.lectures = this.lecturesService.getLecturesByNotion( this.secuenciaActividades.idNocion );
+      this.lecturas = this.lecturesService.getLecturesByNotion( this.secuenciaActividades.idNocion );
     });
+  }
+
+  getLecturePath() {
+    this.rutaLectura = this.lecturesService.getLecturePath( this.selectedLecture );
+  }
+
+  sendTextToProfessor() {
+    const extructuraEmail: IEstructuraEmail = {
+      textoEstudiante: this.studentText,
+      correoProfesor: this.professorsEmail
+    };
+    this.lecturesService.sendTextToProfessor( extructuraEmail );
   }
 
 }

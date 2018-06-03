@@ -1,39 +1,41 @@
 <div class="systematization-activity-container">
-  
-    <mat-grid-list cols="2" rowHeight="2:1">
+  <div class="row">
 
-      <mat-grid-tile>
-        <span>Select the PDF lecture to use for the text: </span>    
-        <mat-form-field>
-          <mat-select placeholder="Select the lecture used for get the inspiration to write:"  
-            [(ngModel)]="selectedLecture">
-            <mat-option *ngFor="let lecture of lectures | async" [value]="lecture.id" >
-              {{ lecture.tituloDoc }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <pdf-viewer class=pdf-container 
-          [src]="pdfSrc" 
-          [render-text]="true">
+    <div class="col s8">
+      <span>Select the PDF lecture to use for the text: </span>
+
+        <mat-select placeholder="Select the lecture:"  
+          [(ngModel)]="selectedLecture"
+          (change)="getLecturePath()">
+          <mat-option *ngFor="let lectura of lecturas | async" [value]="lectura.id" >
+            {{ lectura.tituloDoc }}
+          </mat-option>
+        </mat-select>
+      <div class="pdf-container">
+        <pdf-viewer *ngIf="!!rutaLectura"
+          [src]="rutaLectura" 
+          [render-text]="false"
+          [show-all]="true">
         </pdf-viewer>
-      </mat-grid-tile>
-          
-      <mat-grid-tile>
-        <form [formGroup]="sendTextFormGroup" (ngSubmit)="sendTextToProfessor()">
-          <textarea placeholder="Insert the text..."
-            [(ngModel)]="studentText"
-            formControlName="textoEstudiante">
-          </textarea>          
-          <input matInput 
-          type="email"
-          placeholder="Type the professors' email:" 
-          [(ngModel)]="professorsEmail" 
-          formControlName="emailProfesor"/>
-          <button type="submit" mat-raised-button color="primary" [disabled]="sendTextFormGroup.pristine">Send Text</button>
-        </form>
-      </mat-grid-tile>
+      </div>      
+    </div>
 
-    </mat-grid-list>
-  
+    <div class="col s4">
+      <span>Insert the text: </span>
+      <form [formGroup]="sendTextFormGroup" (ngSubmit)="sendTextToProfessor()">
+        <textarea placeholder="Text"
+          [(ngModel)]="studentText"
+          formControlName="textoEstudiante">
+        </textarea>          
+        <input matInput 
+        type="email"
+        placeholder="Type the professors' email:" 
+        [(ngModel)]="professorsEmail" 
+        formControlName="emailProfesor"/>
+        <button type="submit" mat-raised-button color="primary" [disabled]="sendTextFormGroup.pristine">Send Text</button>
+      </form>
+    </div>
+
+  </div>  
 </div>
 

@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 import { AngularFireModule } from 'angularfire2';
 import { MaterializeModule } from "angular2-materialize";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppComponent } from './app.component';
 import { SelectParametersComponent } from './select-parameters/select-parameters.component';
@@ -26,7 +27,6 @@ import { SystematizationActivityComponent } from './activities-viewer/systematiz
 import { SafeHtmlPipe } from './modules/pipes/safe-html.pipe';
 import { ResultsModalComponent } from './activities-viewer/results-modal/results-modal.component';
 import { LecturesActivityComponent } from './activities-viewer/lectures-activity/lectures-activity.component';
-
 
 // Initialize Firebase
 export const config = {
@@ -62,7 +62,8 @@ export const config = {
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
-    MaterializeModule
+    MaterializeModule,
+    PdfViewerModule
   ],
   providers: [
     ParametersService,

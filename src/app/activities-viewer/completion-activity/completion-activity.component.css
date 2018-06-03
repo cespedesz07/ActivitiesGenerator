@@ -1,0 +1,25 @@
+.location-activity-container {
+  width: 98%;
+  margin: auto auto;
+}
+
+.html-text-container {
+  display: inline-block;
+  height: 100%;
+}
+
+.html-text {
+  height: 100%;
+  overflow: scroll;
+  padding: 18px;
+  background-color: white;
+  text-align: justify;
+}
+
+.actions-container {
+  float: right;
+}
+
+.input-word {
+  display: inline-flex;
+}

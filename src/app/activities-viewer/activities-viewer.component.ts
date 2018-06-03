@@ -27,6 +27,7 @@ export class ActivitiesViewerComponent implements OnInit {
 
   getSequenceActivities(): void {
     this.activitiesSequence = this.activityGenerationService.getSequenceActivities( this.idSecuencia );
+    console.log( this.activitiesSequence );
   }
 
   openActivity( idActividad: number ) {
@@ -38,6 +39,9 @@ export class ActivitiesViewerComponent implements OnInit {
         this.router.navigate(['activities-viewer', this.idSecuencia, 'systematization']);
         break;
       case 3:
+        this.router.navigate(['activities-viewer', this.idSecuencia, 'completion']);
+        break;
+      case 4:
         this.router.navigate(['activities-viewer', this.idSecuencia, 'lectures']);
         break;
       default:

@@ -23,3 +23,7 @@
   width: 7%;
   border-radius: 8px;
 }
+
+.mat-card-image {
+  height: 216px;
+}

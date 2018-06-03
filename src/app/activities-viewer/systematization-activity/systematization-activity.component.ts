@@ -340,7 +340,7 @@ export class SystematizationActivityComponent implements OnInit {
   }
 
   navigateToNextActivity() {
-    this.router.navigate(['activities-viewer', this.idSecuencia, 'lectures']);
+    this.router.navigate(['activities-viewer', this.idSecuencia, 'completion']);
   }
 
 }

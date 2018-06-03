@@ -1,0 +1,14 @@
+<div class="completion-activity-container">
+  <mat-grid-list cols="10" rowHeight="10:40">
+    <mat-grid-tile colspan="10">      
+      <div class="html-text-container">
+          <span>Complete the expressions...</span>
+        <div [innerHTML]="taggedHTML | safeHtml" class="html-text"></div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div class="actions-container">
+    <button mat-button color="primary" (click)="validateResults()">Validate</button>
+    <button mat-raised-button color="primary" (click)="navigateToNextActivity()" [disabled]="!resultsOK">Next Activity</button>
+  </div>
+</div>

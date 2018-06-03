@@ -27,6 +27,7 @@ import { SystematizationActivityComponent } from './activities-viewer/systematiz
 import { SafeHtmlPipe } from './modules/pipes/safe-html.pipe';
 import { ResultsModalComponent } from './activities-viewer/results-modal/results-modal.component';
 import { LecturesActivityComponent } from './activities-viewer/lectures-activity/lectures-activity.component';
+import { CompletionActivityComponent } from './activities-viewer/completion-activity/completion-activity.component';
 
 // Initialize Firebase
 export const config = {
@@ -50,7 +51,8 @@ export const config = {
     SystematizationActivityComponent,
     SafeHtmlPipe,
     ResultsModalComponent,
-    LecturesActivityComponent
+    LecturesActivityComponent,
+    CompletionActivityComponent
   ],
   imports: [
     BrowserModule,

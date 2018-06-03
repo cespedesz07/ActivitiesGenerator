@@ -82,7 +82,6 @@ export class SystematizationActivityComponent implements OnInit {
       const clickedWordObject = this.wordsArray.filter( wordInArray => {
         return wordInArray.id === event.target.id.split('_')[0];
       })[0];
-      console.log( clickedWordObject );
       if ( !clickedWordObject.selected ) {
         document.getElementById( event.target.id ).className = this.WORD_CLASS + ' active';
         clickedWordObject.selected = event.target.innerText.trim();
@@ -97,7 +96,6 @@ export class SystematizationActivityComponent implements OnInit {
           clickedWordObject.selected = '';
         }
       }
-      // console.log( this.wordsArray );
       console.log( clickedWordObject );
     }
   }
@@ -235,19 +233,16 @@ export class SystematizationActivityComponent implements OnInit {
           return tagNocion;
         }
       })[0];
-      console.log( currentTagNocion );
       if ( !!currentTagNocion ) {
         this.htmlString += `
         <div class="main-word-container" id="options${dropdownIndex}">
           ${ this.generateHTMLDropdownSingleTag( currentToken.getAttribute('form'), dropdownIndex, tagsNocionesArray ) }
         </div> `;
         const correctOption = tagsNocionesArray[0].tiposNociones.filter( (tipoNocion: TipoNocion) => {
-          console.log( tipoNocion, currentToken.getAttribute('form') );
           if ( tipoNocion.palabrasEjemplo.indexOf( currentToken.getAttribute('form') ) !== -1 ) {
             return tipoNocion.tipo;
           }
         })[0];
-        console.log( correctOption );
         this.wordsArray.push({
           id: dropdownIndex,
           selected: '',

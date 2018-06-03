@@ -4,7 +4,7 @@ import { Lectura } from '../../model/Lectura';
 import { Observable } from 'rxjs/Observable';
 import { MatSnackBar } from '@angular/material';
 import { LecturesService } from '../../services/lectures/lectures.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ActivityGenerationService } from '../../services/activity-generation/activity-generation.service';
 import { SecuenciaActividades } from '../../model/SecuenciaActividades';
 import { IEstructuraEmail } from '../../model/IEstructuraEmail';
@@ -29,7 +29,7 @@ export class LecturesActivityComponent implements OnInit {
   private secuenciaActividades: SecuenciaActividades;
 
   constructor( private formBuilder: FormBuilder, private route: ActivatedRoute, public snackBar: MatSnackBar,
-    private lecturesService: LecturesService, private activityGenerationService: ActivityGenerationService ) {
+    private lecturesService: LecturesService, private activityGenerationService: ActivityGenerationService, private router: Router ) {
       this.rutaLectura = null;
       this.sendTextFormGroup = this.formBuilder.group({
         'textoEstudiante': new FormControl('', [Validators.required]),
@@ -61,6 +61,10 @@ export class LecturesActivityComponent implements OnInit {
       correoProfesor: this.professorsEmail
     };
     this.lecturesService.sendTextToProfessor( extructuraEmail );
+  }
+
+  navigateToNextActivity() {
+    this.router.navigate(['activities-viewer', this.idSecuencia, 'location']);
   }
 
 }

@@ -27,7 +27,6 @@ export class ActivitiesViewerComponent implements OnInit {
 
   getSequenceActivities(): void {
     this.activitiesSequence = this.activityGenerationService.getSequenceActivities( this.idSecuencia );
-    console.log( this.activitiesSequence );
   }
 
   openActivity( idActividad: number ) {

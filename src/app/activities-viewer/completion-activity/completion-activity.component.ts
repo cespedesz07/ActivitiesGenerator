@@ -80,7 +80,6 @@ export class CompletionActivityComponent implements OnInit {
     let foundWrongWord = false;
     while ( i < this.validWords.length && !foundWrongWord ) {
       const writtenWord: any = document.getElementById( this.validWords[i].id );
-      console.log(  writtenWord.value );
       if ( !!writtenWord.value ) {
         if ( this.validWords[i].correct !== writtenWord.value ) {
           foundWrongWord = true;
@@ -99,7 +98,7 @@ export class CompletionActivityComponent implements OnInit {
   }
 
   navigateToNextActivity() {
-    this.router.navigate(['activities-viewer', this.idSecuencia, 'lecture']);
+    this.router.navigate(['activities-viewer', this.idSecuencia, 'lectures']);
   }
 
 }

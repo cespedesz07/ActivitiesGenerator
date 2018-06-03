@@ -63,11 +63,47 @@ export class SystematizationActivityComponent implements OnInit {
   getXML( idTexto: number ): void {
     this.activityGenerationService.getXML( idTexto ).subscribe( retrievedXMLString => {
       this.XML = retrievedXMLString;
-      this.generateActivity();
+      switch ( this.secuenciaActividades.idNocion ) {
+        case 2:
+          this.generateActivityPresentPerfect();
+          break;
+        case 3:
+          this.generateActivityPastSimple();
+          break;
+        default:  // 1, 4 (Modals, Adj/Adv)
+          this.generateActivityModalsAdjAdv();
+          break;
+      }
     });
   }
 
-  generateActivity() {
+  onClick( event: any ) {
+    if ( event.target.className.split(' ').indexOf( this.WORD_CLASS ) !== -1 ) {
+      const clickedWordObject = this.wordsArray.filter( wordInArray => {
+        return wordInArray.id === event.target.id.split('_')[0];
+      })[0];
+      console.log( clickedWordObject );
+      if ( !clickedWordObject.selected ) {
+        document.getElementById( event.target.id ).className = this.WORD_CLASS + ' active';
+        clickedWordObject.selected = event.target.innerText.trim();
+      }
+      else {
+        if ( event.target.innerText.trim() !== clickedWordObject.selected.trim() ) {
+          document.getElementById( event.target.id ).className = this.WORD_CLASS + ' active';
+          clickedWordObject.selected = event.target.innerText.trim();
+        }
+        else {
+          document.getElementById( event.target.id ).className = this.WORD_CLASS;
+          clickedWordObject.selected = '';
+        }
+      }
+      // console.log( this.wordsArray );
+      console.log( clickedWordObject );
+    }
+  }
+
+  // Past Simple activity
+  generateActivityPastSimple() {
     this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
       const tagsNocionesArray = retrievedNotion.tagsNociones;
       const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
@@ -75,7 +111,112 @@ export class SystematizationActivityComponent implements OnInit {
       for ( let i = 0; i < sentences.length; i++ ) {
         const tokens = sentences[i].getElementsByTagName('token');
         for ( let j = 0; j < tokens.length; j++ ) {
-          if ( tagsNocionesArray.length > 1 ) {
+          this.generateDropdownWithSingleTagAndExampleWords( tagsNocionesArray, tokens[j], i + '' + j, retrievedNotion );
+        }
+      }
+      this.taggedHTML = this.htmlString;
+    });
+    console.log( this.wordsArray );
+  }
+  generateDropdownPastSimple( tagsNocionesArray: TagNocion[], currentToken: any,
+    dropdownIndex: string, retrievedNotion: Nocion ) {
+      const currentTagNocion = tagsNocionesArray.filter( (tagNocion: TagNocion) => {
+        if ( currentToken.getAttribute('ctag') === tagNocion.tag ) {
+          return tagNocion;
+        }
+      })[0];
+      if ( !!currentTagNocion ) {
+        this.htmlString += `
+        <div class="main-word-container" id="options${dropdownIndex}">
+          ${ this.generateHTMLDropdownSingleTag( currentToken.getAttribute('form'), dropdownIndex, tagsNocionesArray ) }
+        </div> `;
+        const correctOption = tagsNocionesArray[0].tiposNociones.filter( (tipoNocion: TipoNocion) => {
+          if ( tipoNocion.palabrasEjemplo.indexOf( currentToken.getAttribute('form') ) !== -1 ) {
+            return tipoNocion.tipo;
+          }
+        })[0];
+        this.wordsArray.push({
+          id: dropdownIndex,
+          selected: '',
+          word: currentToken.getAttribute('form'),
+          correct: correctOption.tipo
+        });
+      }
+      else {
+        this.htmlString += currentToken.getAttribute('form') + ' ';
+      }
+  }
+
+  // Present Perfect Activity
+  generateActivityPresentPerfect() {
+    this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
+      const tagsNocionesArray = retrievedNotion.tagsNociones;
+      const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
+      const sentences = xmlDoc.getElementsByTagName('sentence');
+      for ( let i = 0; i < sentences.length; i++ ) {
+        const tokens = sentences[i].getElementsByTagName('token');
+        for ( let j = 0; j < tokens.length - 1; j++ ) {
+          this.generateDropdownPresentPerfect( tagsNocionesArray, tokens[j], tokens[j + 1], i + '' + j, retrievedNotion );
+        }
+      }
+      this.taggedHTML = this.htmlString;
+    });
+    console.log( this.wordsArray );
+  }
+  generateDropdownPresentPerfect( tagsNocionesArray: TagNocion[], currentToken: any, nextToken: any,
+    dropdownIndex: string, retrievedNotion: Nocion ) {
+      const currentTagNocion = tagsNocionesArray.filter( (tagNocion: any) => {
+        if ( currentToken.getAttribute('form') === 'has' || currentToken.getAttribute('form') === 'have' ) {
+          if ( tagNocion.tag === nextToken.getAttribute('ctag') ) {
+            return tagNocion;
+          }
+        }
+      })[0];
+      if ( !!currentTagNocion ) {
+        const mainPhrase = currentToken.getAttribute('form') + ' ' + nextToken.getAttribute('form');
+        this.htmlString += `
+        <div class="main-word-container" id="options${dropdownIndex}">
+          ${ this.generateHTMLDropdownPresentPerfect( mainPhrase, dropdownIndex, currentTagNocion.tiposNociones ) }
+        </div> `;
+        this.wordsArray.push({
+          id: dropdownIndex,
+          selected: '',
+          word: mainPhrase,
+          correct: currentTagNocion.tiposNociones[0].palabrasEjemplo.indexOf( nextToken.getAttribute('form') ) ?
+            currentTagNocion.tiposNociones[1].tipo : currentTagNocion.tiposNociones[0].tipo
+
+        });
+      }
+      else {
+        this.htmlString += currentToken.getAttribute('form') + ' ';
+      }
+  }
+  generateHTMLDropdownPresentPerfect( mainWord: string, customIndex: string, tiposNociones: TipoNocion[] ): any {
+    let customDropdown = `
+    <div class="dropdown-absolute">
+      <ul>
+        <li>
+          <span class="main-word">${mainWord}</span>
+            <ul class="dropdown-list">`;
+    tiposNociones.forEach( (tipoNocion: TipoNocion, index) => {
+      const tagType = tipoNocion.tipo;
+      customDropdown += `
+      <li id="${customIndex + '_' + index}" class="${this.WORD_CLASS}" (click)="onClick($event)">${tagType}</li>`;
+    });
+    customDropdown += '</ul></li></ul></div>';
+    return customDropdown;
+  }
+
+  // Modals Activity
+  generateActivityModalsAdjAdv() {
+    this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
+      const tagsNocionesArray = retrievedNotion.tagsNociones;
+      const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
+      const sentences = xmlDoc.getElementsByTagName('sentence');
+      for ( let i = 0; i < sentences.length; i++ ) {
+        const tokens = sentences[i].getElementsByTagName('token');
+        for ( let j = 0; j < tokens.length; j++ ) {
+          if ( this.secuenciaActividades.idNocion === 4 ) {
             this.generateDropdownWithMultipleTags( tagsNocionesArray, tokens[j], i + '' + j, retrievedNotion );
           }
           else {
@@ -87,29 +228,50 @@ export class SystematizationActivityComponent implements OnInit {
     });
     console.log( this.wordsArray );
   }
-
-  onClick( event: any ) {
-    if ( event.target.className.split(' ').indexOf( this.WORD_CLASS ) !== -1 ) {
-      const clickedWordObject = this.wordsArray.filter( wordInArray => {
-        return wordInArray.id === event.target.id.split('_')[0];
+  generateDropdownWithSingleTagAndExampleWords( tagsNocionesArray: TagNocion[], currentToken: any,
+    dropdownIndex: string, retrievedNotion: Nocion ) {
+      const currentTagNocion = tagsNocionesArray.filter( (tagNocion: TagNocion) => {
+        if ( currentToken.getAttribute('ctag') === tagNocion.tag ) {
+          return tagNocion;
+        }
       })[0];
-      console.log( clickedWordObject );
-      if ( !clickedWordObject.selected ) {
-        document.getElementById( event.target.id ).className = this.WORD_CLASS + ' active';
-        clickedWordObject.selected = event.target.innerText.split(' ')[0];
+      console.log( currentTagNocion );
+      if ( !!currentTagNocion ) {
+        this.htmlString += `
+        <div class="main-word-container" id="options${dropdownIndex}">
+          ${ this.generateHTMLDropdownSingleTag( currentToken.getAttribute('form'), dropdownIndex, tagsNocionesArray ) }
+        </div> `;
+        const correctOption = tagsNocionesArray[0].tiposNociones.filter( (tipoNocion: TipoNocion) => {
+          console.log( tipoNocion, currentToken.getAttribute('form') );
+          if ( tipoNocion.palabrasEjemplo.indexOf( currentToken.getAttribute('form') ) !== -1 ) {
+            return tipoNocion.tipo;
+          }
+        })[0];
+        console.log( correctOption );
+        this.wordsArray.push({
+          id: dropdownIndex,
+          selected: '',
+          word: currentToken.getAttribute('form'),
+          correct: correctOption.tipo
+        });
       }
       else {
-        if ( event.target.innerHTML.split('-')[0].trim() !== clickedWordObject.selected.trim() ) {
-          document.getElementById( event.target.id ).className = this.WORD_CLASS + ' active';
-          clickedWordObject.selected = event.target.innerText.split(' ')[0];
-        }
-        else {
-          document.getElementById( event.target.id ).className = this.WORD_CLASS;
-          clickedWordObject.selected = '';
-        }
+        this.htmlString += currentToken.getAttribute('form') + ' ';
       }
-      console.log( this.wordsArray );
-    }
+  }
+  generateHTMLDropdownSingleTag( mainWord: string, customIndex: string, tagsNociones: TagNocion[] ): any {
+    let customDropdown = `
+    <div class="dropdown-absolute">
+      <ul>
+        <li>
+          <span class="main-word">${mainWord}</span>
+            <ul class="dropdown-list">`;
+    tagsNociones[0].tiposNociones.forEach( (tipoNocion: TipoNocion, index) => {
+      customDropdown += `
+      <li id="${customIndex + '_' + index}" class="${this.WORD_CLASS}" (click)="onClick($event)">${tipoNocion.tipo}</li>`;
+    });
+    customDropdown += '</ul></li></ul></div>';
+    return customDropdown;
   }
 
   // Adjective, Adverbs
@@ -151,49 +313,6 @@ export class SystematizationActivityComponent implements OnInit {
     return customDropdown;
   }
 
-  generateDropdownWithSingleTagAndExampleWords( tagsNocionesArray: TagNocion[], currentToken: any,
-    dropdownIndex: string, retrievedNotion: Nocion ) {
-      const currentTagNocion = tagsNocionesArray.filter( (tagNocion: TagNocion) => {
-        if ( currentToken.getAttribute('ctag') === tagNocion.tag ) {
-          return tagNocion;
-        }
-      })[0];
-      if ( !!currentTagNocion ) {
-        this.htmlString += `
-        <div class="main-word-container" id="options${dropdownIndex}">
-          ${ this.generateHTMLDropdownSingleTag( currentToken.getAttribute('form'), dropdownIndex, tagsNocionesArray ) }
-        </div> `;
-        const correctOption = tagsNocionesArray[0].tiposNociones.filter( (tipoNocion: TipoNocion) => {
-          if ( tipoNocion.palabrasEjemplo.indexOf( currentToken.getAttribute('form') ) !== -1 ) {
-            return tipoNocion.tipo;
-          }
-        })[0];
-        this.wordsArray.push({
-          id: dropdownIndex,
-          selected: '',
-          word: currentToken.getAttribute('form'),
-          correct: correctOption.tipo
-        });
-      }
-      else {
-        this.htmlString += currentToken.getAttribute('form') + ' ';
-      }
-  }
-
-  generateHTMLDropdownSingleTag( mainWord: string, customIndex: string, tagsNociones: TagNocion[] ): any {
-    let customDropdown = `
-    <div class="dropdown-absolute">
-      <ul>
-        <li>
-          <span class="main-word">${mainWord}</span>
-            <ul class="dropdown-list">`;
-    tagsNociones[0].tiposNociones.forEach( (tipoNocion: TipoNocion, index) => {
-      customDropdown += `
-      <li id="${customIndex + '_' + index}" class="${this.WORD_CLASS}" (click)="onClick($event)">${tipoNocion.tipo}</li>`;
-    });
-    customDropdown += '</ul></li></ul></div>';
-    return customDropdown;
-  }
 
   ngOnInit() {
     this.getSequence();

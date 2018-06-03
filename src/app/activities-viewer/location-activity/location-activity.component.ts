@@ -56,11 +56,21 @@ export class LocationActivityComponent implements OnInit {
   getXML( idTexto: number ): void {
     this.activityGenerationService.getXML( idTexto ).subscribe( retrievedXMLString => {
       this.XML = retrievedXMLString;
-      this.generateActivity();
+      switch ( this.secuenciaActividades.idNocion ) {
+        case 2:
+          this.generateActivityPresentPerfect();
+          break;
+        case 3:
+          this.generateActivityPastSimple();
+          break;
+        default:  // 1, 4 (Modals, Adj/Adv)
+          this.generateActivityModalsAdjAdv();
+          break;
+      }
     });
   }
 
-  generateActivity() {
+  generateActivityPastSimple() {
     this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
       const xmlCtagsArray = retrievedNotion.tagsNociones.map( tagsObject => tagsObject.tag );
       const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
@@ -71,11 +81,54 @@ export class LocationActivityComponent implements OnInit {
           if ( xmlCtagsArray.includes( tokens[j].getAttribute('ctag') ) ) {
             this.validWords.push( tokens[j].getAttribute('form').trim() );
           }
-          this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;        
+          this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;
         }
       }
       console.log( this.validWords );
     });
+  }
+
+  generateActivityModalsAdjAdv() {
+    this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
+      const xmlCtagsArray = retrievedNotion.tagsNociones.map( tagsObject => tagsObject.tag );
+      const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
+      const sentences = xmlDoc.getElementsByTagName('sentence');
+      for ( let i = 0; i < sentences.length; i++ ) {
+        const tokens = sentences[i].getElementsByTagName('token');
+        for ( let j = 0; j < tokens.length; j++ ) {
+          if ( xmlCtagsArray.includes( tokens[j].getAttribute('ctag') ) ) {
+            this.validWords.push( tokens[j].getAttribute('form').trim() );
+          }
+          this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;
+        }
+      }
+      console.log( this.validWords );
+    });
+  }
+
+  generateActivityPresentPerfect() {
+    this.activityGenerationService.getNotion( this.secuenciaActividades.idNocion ).subscribe( retrievedNotion => {
+      const xmlCtagsArray = retrievedNotion.tagsNociones.map( tagsObject => tagsObject.tag );
+      const xmlDoc = this.parser.parseFromString( this.XML, 'text/xml' );
+      const sentences = xmlDoc.getElementsByTagName('sentence');
+      for ( let i = 0; i < sentences.length; i++ ) {
+        const tokens = sentences[i].getElementsByTagName('token');
+        for ( let j = 0; j < tokens.length - 1; j++ ) {
+          let phrase = '';
+          if ( tokens[j].getAttribute('form') === 'has' || tokens[j].getAttribute('form') === 'have' ) {
+            if ( xmlCtagsArray[2] === tokens[j + 1].getAttribute('ctag') ) {
+              phrase = tokens[j].getAttribute('form').trim() + ' ' + tokens[j + 1].getAttribute('form').trim();
+              this.validWords.push( phrase );
+              this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${phrase} </span>`;
+            }
+          }
+          else {
+            this.taggedHTML += `<span class="${this.WORD_CLASS}" (click)="addWord()"> ${tokens[j].getAttribute('form')} </span>`;
+          }
+        }
+      }
+    });
+    console.log( this.validWords );
   }
 
   ngOnInit() {
@@ -88,7 +141,7 @@ export class LocationActivityComponent implements OnInit {
 
   onClick( event: any ): void {
     if ( event.target.className === this.WORD_CLASS ) {
-      let selectedWord = event.target.innerHTML.trim();
+      const selectedWord = event.target.innerHTML.trim();
       this.selectedWords.next( selectedWord );
     }
   }
